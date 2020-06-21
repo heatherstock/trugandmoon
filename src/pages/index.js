@@ -6,10 +6,8 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>TEST FOR CNAME </h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
+    <p>Work in progress, while you're here, check out our <Link to="/blog">blog</Link></p>
+    <p>"Know thyself and thou shalt know the Universe and God." - Pythagoras</p>
   </Layout>
 )
 

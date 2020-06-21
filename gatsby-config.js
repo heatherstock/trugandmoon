@@ -1,8 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Trug & Moon`,
+    description: `Know thyself and thou shalt know the Universe and God.`,
+    author: `@trugandmoon`,
+    menuLinks:[
+      {
+        name:'About',
+        link:'/about'
+      },
+      // {
+      //   name:'Yoga',
+      //   link:'/yoga'
+      //  }, 
+       {
+         name: 'Blog',
+         link: '/blog'
+       }
+      ]
   },
   pathPrefix: "/trugandmoon",
   plugins: [
@@ -10,17 +24,19 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `trugandmoon`,
+        short_name: `trugandmoon`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
