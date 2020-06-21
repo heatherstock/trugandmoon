@@ -18,7 +18,6 @@ module.exports = {
        }
       ]
   },
-  pathPrefix: "/trugandmoon",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
