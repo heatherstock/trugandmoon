@@ -11,13 +11,12 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Title = styled.h1`
+const TitleLink = styled(Link)`
+  font-family: Work Sans, sans serif;
+  font-weight: 800;
   font-size: 4.5em;
   margin: 24px 0;
   flex: 1;
-`;
-
-const TitleLink = styled(Link)`
   color: palevioletred;
   text-decoration: none;
 `;
@@ -41,10 +40,8 @@ const ListItem = styled.li`
 const Header = ({ siteTitle, menuLinks }) => (
   <header>
       <Wrapper>
-        <Title>
-          <TitleLink to="/">{siteTitle}</TitleLink>
-        </Title>
-        <div>
+        <TitleLink to="/">{siteTitle}</TitleLink>
+          <div>
             <List>
               {menuLinks.map(link => (
                 <ListItem key={link.name}>
