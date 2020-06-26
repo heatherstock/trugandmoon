@@ -8,6 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: Baskervville, serif;
     font-size: 16px;
+    position: relative;
+    min-height: 100vh;
   }
   h1, h2, h3 {
     font-family: Work Sans, sans serif;
