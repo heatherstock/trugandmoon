@@ -1,43 +1,59 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import styled from "styled-components";
 import React from "react"
+
+const Wrapper = styled.div`
+  margin: 0 auto;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const Title = styled.h1`
+  font-size: 4.5em;
+  margin: 24px 0;
+  flex: 1;
+`;
+
+const TitleLink = styled(Link)`
+  color: palevioletred;
+  text-decoration: none;
+`;
+
+const NavLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+`;
+
+const List = styled.ul`
+  display: flex;
+  flex: 1;
+`;
+
+const ListItem = styled.li`
+  list-style-type: none;
+  padding: 0 1rem;
+  margin-top: 2rem;
+`;
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header>
-      <div
-        style={{
-          margin: "0 auto",
-          maxWidth: 1240,
-          display: "flex",
-          justifyItems: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <h1 style={{ margin: 0, flex: 1 }}>
-          <Link to="/" style={{ color: "black", textDecoration: "none" }}>
-            {siteTitle}
-          </Link>
-        </h1>
+      <Wrapper>
+        <Title>
+          <TitleLink to="/">{siteTitle}</TitleLink>
+        </Title>
         <div>
-          <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
+            <List>
               {menuLinks.map(link => (
-                <li key={link.name} style={{ listStyleType: `none`, padding: `0 1rem`, marginTop: "2rem" }}>
-                  <Link style={{ color: `black`, textDecoration: "none" }} to={link.link}>
-                    {link.name}
-                  </Link>
-                </li>
+                <ListItem key={link.name}>
+                  <NavLink to={link.link}>{link.name}</NavLink>
+                </ListItem>
               ))}
-            </ul>
-          </nav>
+            </List>
         </div>
-      </div>
+      </Wrapper>
   </header>
 )
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-Header.defaultProps = {
-  siteTitle: ``,
-}
+
 export default Header
