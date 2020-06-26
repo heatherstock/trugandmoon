@@ -3,7 +3,7 @@ title: "Find Your Purpose (part one)"
 description: "Part one of a five part series helping you identify your purpose"
 tags: ["find-your-purpose"]
 date: "2020-06-21"
-path: "/blog/find-your-purpose-part-one"
+path: "/articles/find-your-purpose-part-one"
 # keywords: ["blog","trugandmoon","Find your purpose", "Trug and Moon"]
 ---
 Finding your life's purpose and achieving "work / life balance" can generally be thought of as myths for most people. A very small fraction of society knows their "purpose" in life, and I'd probably put a bet on it that even the majority of those people are only pretending to have their shit together anyway. Work / life balance is another slippery ideal preached to us by workplace "mindfulness" initiatives that seek to put both the blame and pressure to fix the problem back on us workers.

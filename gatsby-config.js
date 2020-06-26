@@ -7,15 +7,7 @@ module.exports = {
       {
         name:'About',
         link:'/about'
-      },
-      // {
-      //   name:'Yoga',
-      //   link:'/yoga'
-      //  }, 
-       {
-         name: 'Blog',
-         link: '/blog'
-       }
+      }
       ]
   },
   plugins: [
