@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import styled from "styled-components";
+import PropTypes from 'prop-types'
 import React from "react"
 
 const Wrapper = styled.div`
@@ -55,5 +56,13 @@ const Header = ({ siteTitle, menuLinks }) => (
       </Wrapper>
   </header>
 )
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Header.defaultProps = {
+  siteTitle: ``,
+}
 
 export default Header
