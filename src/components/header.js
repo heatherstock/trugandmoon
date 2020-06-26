@@ -5,10 +5,10 @@ import React from "react"
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  max-width: 1240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #cec6b9;
 `;
 
 const TitleLink = styled(Link)`

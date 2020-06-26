@@ -6,14 +6,17 @@ import { GlobalStyle } from "../theme";
 import Header from "./header"
 
 const Wrapper = styled.div`
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
 `;
 
 const Footer = styled.footer`
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
+  height: 3rem;
 `;
 
 const Layout = ({ children }) => {

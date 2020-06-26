@@ -10,6 +10,30 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(12, [col-start] 1fr);
   grid-gap: 20px;
   grid-auto-flow: dense;
+
+  & > * {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+    }
+
+    &:before {
+      top: 0;
+      bottom: 0;
+      left: -10px;
+      border-left: 1px solid #cec6b9;
+    }
+
+    &:after {
+      right: 0;
+      bottom: -10px;
+      left: 0;
+      border-bottom: 1px solid #cec6b9;
+    }
+  }
 `;
 
 const Welcome = styled.div`
@@ -35,6 +59,13 @@ const NotPrimary = styled.div`
 }
 `;
 
+const PrimaryImage = styled(Img)`
+  height: 200px;
+`;
+
+const SecondaryImage = styled(Img)`
+  height: 150px;
+`;
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -51,23 +82,29 @@ const IndexPage = ({ data }) => (
       ))}
       </Welcome>
       <Primary>
+      {data.primary.edges.map(({ node }) => (
+        <div key={node.id}>
+          <PrimaryImage fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
+        </div>
+      ))}
+      </Primary>
+      <Primary>
         {data.primary.edges.map(({ node }) => (
           <div key={node.id}>
             <Link to={node.fields.slug}>
             <h3>{node.frontmatter.title}</h3>
             </Link>
             <p>{node.excerpt}</p>
-          <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
           </div>
         ))}
       </Primary>
       {data.secondary.edges.map(({ node }) => (
         <NotPrimary>
           <div key={node.id}>
+            <SecondaryImage fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
             <Link to={node.fields.slug}>
             <h3>{node.frontmatter.title}</h3>
             </Link>
-            <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
             <p>{node.excerpt}</p>
           </div>
         </NotPrimary>
