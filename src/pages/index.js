@@ -7,11 +7,9 @@ import SEO from "../components/seo"
 
 const Wrapper = styled.div`
 @media (max-width: 600px) {
-  margin: 0 18px;
   grid-gap: 18px;
 }
 @media (min-width: 600px) {
-  margin: 0 36px;
   grid-gap: 30px;
 }
   display: grid;

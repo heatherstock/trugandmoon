@@ -1,21 +1,11 @@
 import React from "react"
-import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-const Wrapper = styled.div`
-@media (max-width: 600px) {
-  margin: 0 18px;
-}
-@media (min-width: 600px) {
-  margin: 0 36px;
-}
-`;
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About" />
-    <Wrapper>
+
       <p>
         Trug and Moon is run by Drayson and Stock - a collaboration between husband and wife team James Drayson and Heather Stock. 
         We’re constantly striving to do what we love and learn new things, from growing our own vegetables, 
@@ -38,7 +28,7 @@ const AboutPage = () => (
         Stock is busy exploring ways to bring all these skills together, along with her passion for spiritual 
         philosophy, and is happiest when discussing her latest epiphany.
       </p>
-    </Wrapper>
+
   </Layout>
 )
 

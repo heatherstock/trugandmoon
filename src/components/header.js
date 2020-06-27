@@ -4,12 +4,6 @@ import PropTypes from 'prop-types'
 import React from "react"
 
 const Wrapper = styled.div`
-@media (max-width: 600px) {
-  margin: 0 18px;
-}
-@media (min-width: 600px) {
-  margin: 0 36px;
-}
   display: flex;
   justify-content: space-between;
   align-items: center;

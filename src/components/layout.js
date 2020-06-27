@@ -6,6 +6,12 @@ import { GlobalStyle } from "../theme";
 import Header from "./header"
 
 const Wrapper = styled.div`
+@media (max-width: 600px) {
+  margin: 0 18px;
+}
+@media (min-width: 600px) {
+  margin: 0 36px;
+}
   padding-bottom: 56px;
 `;
 
@@ -37,11 +43,11 @@ const Layout = ({ children }) => {
   return (
     <>
     <GlobalStyle />
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
       <Wrapper>
+      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
         <div>{children}</div>
-        <Footer>© Trug & Moon, {new Date().getFullYear()}</Footer>
       </Wrapper>
+      <Footer>© Trug & Moon, {new Date().getFullYear()}</Footer>
     </>
   )
 }
