@@ -32,6 +32,15 @@ const RightHand = styled.div`
 }
 `;
 
+const Bottom = styled.div`
+@media (max-width: 900px) {
+  grid-column: span 3;
+}
+@media (min-width: 900px) {
+  display: none;
+}
+`;
+
 const Type1 = styled.div`
 @media (max-width: 600px) {
   grid-column: span 12;
@@ -185,6 +194,16 @@ const IndexPage = ({ data }) => (
             <p>{node.excerpt}</p>
           </div>
         </Type2>
+      ))}
+      {data.quaternary.edges.map(({ node }) => (
+        <Bottom>
+          <div key={node.id}>
+            <StyledLink to={node.fields.slug}>
+            <Article>{node.frontmatter.title}</Article>
+            </StyledLink>
+            <p>{node.excerpt}</p>
+          </div>
+        </Bottom>
       ))}
     </Wrapper>
   </Layout>
