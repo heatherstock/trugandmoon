@@ -92,6 +92,29 @@ const SecondaryImage = styled(Img)`
   height: 150px;
 `;
 
+const Edition = styled.h1`
+@media (max-width: 600px) {
+  font-size: 32px;
+}
+@media (min-width: 600px) {
+  font-size: 42px;
+}
+  color: darkOliveGreen;
+`;
+
+const Article = styled.h2`
+  font-size: 24px;
+  color: darkOliveGreen;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: darkOliveGreen;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
@@ -99,8 +122,8 @@ const IndexPage = ({ data }) => (
       <Welcome>
       {data.welcome.edges.map(({ node }) => (
         <div key={node.id}>
-          <h3>{node.frontmatter.title}</h3>
-          <p>{node.excerpt}</p>
+          <Edition>{node.frontmatter.title}</Edition>
+          <p>{node.htmlAst.children[0].children[0].value}</p>
         </div>
       ))}
       </Welcome>
@@ -114,9 +137,9 @@ const IndexPage = ({ data }) => (
       <Type1>
         {data.primary.edges.map(({ node }) => (
           <div key={node.id}>
-            <Link to={node.fields.slug}>
-            <h3>{node.frontmatter.title}</h3>
-            </Link>
+            <StyledLink to={node.fields.slug}>
+            <Article>{node.frontmatter.title}</Article>
+            </StyledLink>
             <p>{node.excerpt}</p>
           </div>
         ))}
@@ -124,9 +147,9 @@ const IndexPage = ({ data }) => (
       {data.quaternary.edges.map(({ node }) => (
         <RightHand>
           <div key={node.id}>
-            <Link to={node.fields.slug}>
-            <h3>{node.frontmatter.title}</h3>
-            </Link>
+            <StyledLink to={node.fields.slug}>
+            <Article>{node.frontmatter.title}</Article>
+            </StyledLink>
             <p>{node.excerpt}</p>
           </div>
         </RightHand>
@@ -135,9 +158,9 @@ const IndexPage = ({ data }) => (
         <Type2>
           <div key={node.id}>
             <SecondaryImage fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-            <Link to={node.fields.slug}>
-            <h3>{node.frontmatter.title}</h3>
-            </Link>
+            <StyledLink to={node.fields.slug}>
+            <Article>{node.frontmatter.title}</Article>
+            </StyledLink>
             <p>{node.excerpt}</p>
           </div>
         </Type2>
@@ -146,9 +169,9 @@ const IndexPage = ({ data }) => (
         <Type3>
           <div key={node.id}>
             <SecondaryImage fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-            <Link to={node.fields.slug}>
-            <h3>{node.frontmatter.title}</h3>
-            </Link>
+            <StyledLink to={node.fields.slug}>
+            <Article>{node.frontmatter.title}</Article>
+            </StyledLink>
             <p>{node.excerpt}</p>
           </div>
         </Type3>
@@ -156,9 +179,9 @@ const IndexPage = ({ data }) => (
       {data.tertiary.edges.map(({ node }) => (
         <Type2>
           <div key={node.id}>
-            <Link to={node.fields.slug}>
-            <h3>{node.frontmatter.title}</h3>
-            </Link>
+            <StyledLink to={node.fields.slug}>
+            <Article>{node.frontmatter.title}</Article>
+            </StyledLink>
             <p>{node.excerpt}</p>
           </div>
         </Type2>
@@ -177,10 +200,10 @@ export const query = graphql`
           frontmatter {
             title
           }
+          htmlAst 
           fields {
             slug
           }
-          excerpt
         }
       }
     }
