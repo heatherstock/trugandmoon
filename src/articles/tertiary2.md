@@ -1,6 +1,6 @@
 ---
 title: "Tertiary2"
-tags: ["tertiary"]
+tag: inspirational
 type: tertiary
 path: "/articles/Tertiary2"
 ---

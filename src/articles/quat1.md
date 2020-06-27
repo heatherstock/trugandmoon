@@ -1,6 +1,6 @@
 ---
 title: "quat1"
-tags: ["quat"]
+tag: quat
 type: quat
 path: "/articles/quat1"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Tertiary4"
-tags: ["tertiary"]
+tag: gardening
 type: tertiary
 path: "/articles/Tertiary4"
 ---

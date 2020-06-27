@@ -1,6 +1,5 @@
 ---
 title: "Summer 2020"
-tags: ["welcome"]
 type: welcome
 path: "/articles/welcome"
 ---

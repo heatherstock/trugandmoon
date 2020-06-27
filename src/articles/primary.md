@@ -1,6 +1,6 @@
 ---
 title: "Primary"
-tags: ["primary"]
+tag: gardening
 type: primary
 path: "/articles/primary"
 featuredImage: ../images/primary.jpg

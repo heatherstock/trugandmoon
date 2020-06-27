@@ -1,6 +1,6 @@
 ---
 title: "Tertiary6"
-tags: ["tertiary"]
+tag: letterpress
 type: tertiary
 path: "/articles/Tertiary6"
 ---

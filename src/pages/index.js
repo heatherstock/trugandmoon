@@ -150,6 +150,7 @@ const IndexPage = ({ data }) => (
             <Article>{node.frontmatter.title}</Article>
             </StyledLink>
             <p>{node.excerpt}</p>
+            <p>{node.frontmatter.tag}</p>
           </div>
         ))}
       </Type1>
@@ -171,6 +172,7 @@ const IndexPage = ({ data }) => (
             <Article>{node.frontmatter.title}</Article>
             </StyledLink>
             <p>{node.excerpt}</p>
+            <p>{node.frontmatter.tag}</p>
           </div>
         </Type2>
       ))}
@@ -182,6 +184,7 @@ const IndexPage = ({ data }) => (
             <Article>{node.frontmatter.title}</Article>
             </StyledLink>
             <p>{node.excerpt}</p>
+            <p>{node.frontmatter.tag}</p>
           </div>
         </Type3>
       ))}
@@ -192,6 +195,7 @@ const IndexPage = ({ data }) => (
             <Article>{node.frontmatter.title}</Article>
             </StyledLink>
             <p>{node.excerpt}</p>
+            <p>{node.frontmatter.tag}</p>
           </div>
         </Type2>
       ))}
@@ -233,6 +237,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            tag
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
@@ -255,6 +260,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            tag
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
@@ -277,6 +283,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            tag
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
@@ -299,6 +306,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            tag
           }
           fields {
             slug

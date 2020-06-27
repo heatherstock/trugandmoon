@@ -1,6 +1,6 @@
 ---
 title: "Tertiary3"
-tags: ["tertiary"]
+tag: spiritual
 type: tertiary
 path: "/articles/Tertiary3"
 ---
