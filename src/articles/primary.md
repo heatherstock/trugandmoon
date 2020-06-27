@@ -1,6 +1,7 @@
 ---
 title: "Primary"
 tags: ["primary"]
+type: primary
 path: "/articles/primary"
 featuredImage: ../images/primary.jpg
 ---

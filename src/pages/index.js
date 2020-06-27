@@ -192,7 +192,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   query {
-    welcome: allMarkdownRemark(filter: {frontmatter: {tags: {eq: "welcome"}}}) {
+    welcome: allMarkdownRemark(filter: {frontmatter: {type: {eq: "welcome"}}}) {
       totalCount
       edges {
         node {
@@ -207,7 +207,7 @@ export const query = graphql`
         }
       }
     }
-    primary: allMarkdownRemark(filter: {frontmatter: {tags: {eq: "primary"}}}) {
+    primary: allMarkdownRemark(filter: {frontmatter: {type: {eq: "primary"}}}) {
       totalCount
       edges {
         node {
@@ -229,7 +229,7 @@ export const query = graphql`
         }
       }
     }
-    secondary1: allMarkdownRemark(filter: {frontmatter: {tags: {eq: "secondaryType1"}}}) {
+    secondary1: allMarkdownRemark(filter: {frontmatter: {type: {eq: "secondaryType1"}}}) {
       totalCount
       edges {
         node {
@@ -251,7 +251,7 @@ export const query = graphql`
         }
       }
     }
-    secondary2: allMarkdownRemark(filter: {frontmatter: {tags: {eq: "secondaryType2"}}}) {
+    secondary2: allMarkdownRemark(filter: {frontmatter: {type: {eq: "secondaryType2"}}}) {
       totalCount
       edges {
         node {
@@ -273,7 +273,7 @@ export const query = graphql`
         }
       }
     }
-    tertiary: allMarkdownRemark(filter: {frontmatter: {tags: {eq: "tertiary"}}}) {
+    tertiary: allMarkdownRemark(filter: {frontmatter: {type: {eq: "tertiary"}}}) {
       totalCount
       edges {
         node {
@@ -288,7 +288,7 @@ export const query = graphql`
         }
       }
     }
-    quaternary: allMarkdownRemark(filter: {frontmatter: {tags: {eq: "quat"}}}) {
+    quaternary: allMarkdownRemark(filter: {frontmatter: {type: {eq: "quat"}}}) {
       totalCount
       edges {
         node {
