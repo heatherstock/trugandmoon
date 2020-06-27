@@ -1,6 +1,6 @@
 ---
 title: "Secondary2"
-tags: ["secondary"]
+tags: ["secondaryType1"]
 path: "/articles/secondary2"
 featuredImage: ../images/secondary2.jpeg
 ---
