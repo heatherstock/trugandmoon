@@ -29,6 +29,7 @@ const RightHand = styled.div`
 }
 @media (min-width: 900px) {
   grid-column: col-start 10 / span 3;
+  grid-row: span 4;
 }
 `;
 
@@ -154,16 +155,14 @@ const IndexPage = ({ data }) => (
           </div>
         ))}
       </Type1>
-      {data.quaternary.edges.map(({ node }) => (
-        <RightHand>
-          <div key={node.id}>
-            <StyledLink to={node.fields.slug}>
-            <Article>{node.frontmatter.title}</Article>
-            </StyledLink>
-            <p>{node.excerpt}</p>
-          </div>
-        </RightHand>
-      ))}
+      <RightHand>
+        <div>
+          <h2>Browse Tags</h2>
+          {data.rightHandRail.group.map(({ tag }) => (
+          <p>{tag}</p>
+          ))}
+        </div>
+      </RightHand>
       {data.secondary1.edges.map(({ node }) => (
         <Type2>
           <div key={node.id}>
@@ -199,16 +198,14 @@ const IndexPage = ({ data }) => (
           </div>
         </Type2>
       ))}
-      {data.quaternary.edges.map(({ node }) => (
-        <Bottom>
-          <div key={node.id}>
-            <StyledLink to={node.fields.slug}>
-            <Article>{node.frontmatter.title}</Article>
-            </StyledLink>
-            <p>{node.excerpt}</p>
-          </div>
-        </Bottom>
-      ))}
+      <Bottom>
+        <div>
+          <h2>Browse Tags</h2>
+          {data.rightHandRail.group.map(({ tag }) => (
+          <p>{tag}</p>
+          ))}
+        </div>
+      </Bottom>
     </Wrapper>
   </Layout>
 )
@@ -315,19 +312,9 @@ export const query = graphql`
         }
       }
     }
-    quaternary: allMarkdownRemark(filter: {frontmatter: {type: {eq: "quat"}}}) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
+    rightHandRail: allMarkdownRemark {
+      group(field: frontmatter___tag) {
+        tag: fieldValue
       }
     }
   }
