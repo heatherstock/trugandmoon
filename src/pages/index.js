@@ -10,9 +10,7 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(12, [col-start] 1fr);
   grid-gap: 20px;
   grid-auto-flow: dense;
-
-  & > * {
-  }
+  overflow: hidden;
 }
 `;
 
@@ -25,7 +23,7 @@ const RightHand = styled.div`
   display: none;
 }
 @media (min-width: 900px) {
-  grid-column: col-start 11 / span 2;
+  grid-column: col-start 10 / span 3;
 }
 `;
 
@@ -37,13 +35,9 @@ const Primary = styled.div`
   grid-column: span 6;
 }
 @media (min-width: 900px) {
-  grid-column: span 5;
+  grid-column: span 4;
 }
 `;
-
-// 2 --> 640px
-// 3 --> 880px
-// 3 + RHR --> 
 
 const PrimaryImage = styled(Img)`
   height: 250px;
@@ -64,22 +58,25 @@ const PrimaryImageContainer = styled.div`
 
 const SecondaryType1 = styled.div`
 @media (max-width: 600px) {
-  grid-column: span 12;
-}
-@media (min-width: 600px) {
   grid-column: span 6;
 }
+@media (min-width: 600px) {
+  grid-column: span 4;
+}
 @media (min-width: 900px) {
-  grid-column: span 5;
+  grid-column: span 3;
 }
 `;
 
 const SecondaryType2 = styled.div`
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   grid-column: span 12;
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   grid-column: span 4;
+}
+@media (min-width: 900px) {
+  grid-column: span 3;
 }
 `;
 
@@ -89,13 +86,13 @@ const SecondaryImage = styled(Img)`
 
 const Tertiary = styled.div`
 @media (max-width: 600px) {
-  grid-column: span 12;
-}
-@media (min-width: 600px) {
   grid-column: span 6;
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   grid-column: span 4;
+}
+@media (min-width: 900px) {
+  grid-column: span 3;
 }
 `;
 

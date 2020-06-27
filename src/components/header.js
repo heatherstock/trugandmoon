@@ -15,7 +15,7 @@ const TitleLink = styled(Link)`
   font-family: Work Sans, sans serif;
   font-weight: 800;
   font-size: 4.5em;
-  margin: 24px 0;
+  margin: 16px 0;
   flex: 1;
   color: palevioletred;
   text-decoration: none;
@@ -33,8 +33,8 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   list-style-type: none;
-  padding: 0 1rem;
-  margin-top: 2rem;
+  padding: 0 40px;
+  margin-top: 36px;
 `;
 
 const Header = ({ siteTitle, menuLinks }) => (

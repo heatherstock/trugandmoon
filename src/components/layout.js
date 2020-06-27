@@ -6,7 +6,7 @@ import { GlobalStyle } from "../theme";
 import Header from "./header"
 
 const Wrapper = styled.div`
-  padding-bottom: 3rem;
+  padding-bottom: 56px;
 `;
 
 const Footer = styled.footer`
@@ -16,7 +16,7 @@ const Footer = styled.footer`
   justify-content: center;
   bottom: 0;
   width: 100%;
-  height: 3rem;
+  height: 56px;
 `;
 
 const Layout = ({ children }) => {
