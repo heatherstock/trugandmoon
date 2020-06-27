@@ -6,9 +6,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Wrapper = styled.div`
+@media (max-width: 600px) {
+  margin: 0 18px;
+  grid-gap: 18px;
+}
+@media (min-width: 600px) {
+  margin: 0 36px;
+  grid-gap: 30px;
+}
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-gap: 20px;
   grid-auto-flow: dense;
   overflow: hidden;
 }
@@ -27,7 +34,7 @@ const RightHand = styled.div`
 }
 `;
 
-const Primary = styled.div`
+const Type1 = styled.div`
 @media (max-width: 600px) {
   grid-column: span 12;
 }
@@ -39,11 +46,11 @@ const Primary = styled.div`
 }
 `;
 
-const PrimaryImage = styled(Img)`
+const Type1Image = styled(Img)`
   height: 250px;
 `;
 
-const PrimaryImageContainer = styled.div`
+const Type1ImageContainer = styled.div`
   @media (max-width: 600px) {
     grid-column: span 12;
   }
@@ -56,8 +63,11 @@ const PrimaryImageContainer = styled.div`
 `;
 
 
-const SecondaryType1 = styled.div`
-@media (max-width: 600px) {
+const Type2 = styled.div`
+@media (max-width: 400px) {
+  grid-column: span 12;
+}
+@media (min-width: 400px) {
   grid-column: span 6;
 }
 @media (min-width: 600px) {
@@ -68,7 +78,7 @@ const SecondaryType1 = styled.div`
 }
 `;
 
-const SecondaryType2 = styled.div`
+const Type3 = styled.div`
 @media (max-width: 600px) {
   grid-column: span 12;
 }
@@ -84,18 +94,6 @@ const SecondaryImage = styled(Img)`
   height: 150px;
 `;
 
-const Tertiary = styled.div`
-@media (max-width: 600px) {
-  grid-column: span 6;
-}
-@media (min-width: 600px) {
-  grid-column: span 4;
-}
-@media (min-width: 900px) {
-  grid-column: span 3;
-}
-`;
-
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
@@ -103,21 +101,19 @@ const IndexPage = ({ data }) => (
       <Welcome>
       {data.welcome.edges.map(({ node }) => (
         <div key={node.id}>
-          <Link to={node.fields.slug}>
           <h3>{node.frontmatter.title}</h3>
-          </Link>
           <p>{node.excerpt}</p>
         </div>
       ))}
       </Welcome>
       {data.primary.edges.map(({ node }) => (
-      <PrimaryImageContainer>
+      <Type1ImageContainer>
         <div key={node.id}>
-          <PrimaryImage fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
+          <Type1Image fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
         </div>
-      </PrimaryImageContainer>
+      </Type1ImageContainer>
       ))}
-      <Primary>
+      <Type1>
         {data.primary.edges.map(({ node }) => (
           <div key={node.id}>
             <Link to={node.fields.slug}>
@@ -126,7 +122,7 @@ const IndexPage = ({ data }) => (
             <p>{node.excerpt}</p>
           </div>
         ))}
-      </Primary>
+      </Type1>
       {data.quaternary.edges.map(({ node }) => (
         <RightHand>
           <div key={node.id}>
@@ -138,7 +134,7 @@ const IndexPage = ({ data }) => (
         </RightHand>
       ))}
       {data.secondary1.edges.map(({ node }) => (
-        <SecondaryType1>
+        <Type2>
           <div key={node.id}>
             <SecondaryImage fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
             <Link to={node.fields.slug}>
@@ -146,10 +142,10 @@ const IndexPage = ({ data }) => (
             </Link>
             <p>{node.excerpt}</p>
           </div>
-        </SecondaryType1>
+        </Type2>
       ))}
       {data.secondary2.edges.map(({ node }) => (
-        <SecondaryType2>
+        <Type3>
           <div key={node.id}>
             <SecondaryImage fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
             <Link to={node.fields.slug}>
@@ -157,17 +153,17 @@ const IndexPage = ({ data }) => (
             </Link>
             <p>{node.excerpt}</p>
           </div>
-        </SecondaryType2>
+        </Type3>
       ))}
       {data.tertiary.edges.map(({ node }) => (
-        <Tertiary>
+        <Type2>
           <div key={node.id}>
             <Link to={node.fields.slug}>
             <h3>{node.frontmatter.title}</h3>
             </Link>
             <p>{node.excerpt}</p>
           </div>
-        </Tertiary>
+        </Type2>
       ))}
     </Wrapper>
   </Layout>

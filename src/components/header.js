@@ -4,7 +4,12 @@ import PropTypes from 'prop-types'
 import React from "react"
 
 const Wrapper = styled.div`
-  margin: 0 auto;
+@media (max-width: 600px) {
+  margin: 0 18px;
+}
+@media (min-width: 600px) {
+  margin: 0 36px;
+}
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,9 +17,14 @@ const Wrapper = styled.div`
 `;
 
 const TitleLink = styled(Link)`
+@media (max-width: 600px) {
+  font-size: 42px;
+}
+@media (min-width: 600px) {
+  font-size: 72px;
+}
   font-family: Work Sans, sans serif;
   font-weight: 800;
-  font-size: 4.5em;
   margin: 16px 0;
   flex: 1;
   color: palevioletred;
@@ -32,8 +42,13 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  list-style-type: none;
+@media (max-width: 600px) {
+  padding: 0 18px;
+}
+@media (min-width: 600px) {
   padding: 0 40px;
+}
+  list-style-type: none;
   margin-top: 36px;
 `;
 
@@ -41,14 +56,14 @@ const Header = ({ siteTitle, menuLinks }) => (
   <header>
       <Wrapper>
         <TitleLink to="/">{siteTitle}</TitleLink>
-          <div>
-            <List>
-              {menuLinks.map(link => (
-                <ListItem key={link.name}>
-                  <NavLink to={link.link}>{link.name}</NavLink>
-                </ListItem>
-              ))}
-            </List>
+        <div>
+        <List>
+          {menuLinks.map(link => (
+            <ListItem key={link.name}>
+              <NavLink to={link.link}>{link.name}</NavLink>
+            </ListItem>
+          ))}
+        </List>
         </div>
       </Wrapper>
   </header>
