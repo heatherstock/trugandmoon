@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 const Wrapper = styled.div`
 @media (max-width: 600px) {
   column-gap: 18px;
-  row-gap: 0;
 }
   display: grid;
   column-gap: 30px;
@@ -24,6 +23,9 @@ const Welcome = styled.div`
 `;
 
 const Section1 = styled.div`
+@media (max-width: 600px) {
+  column-gap: 18px;
+}
   @media (max-width: 960px) {
     grid-column: span 12;
   }
@@ -58,6 +60,9 @@ const Subtitle2 = styled.h1`
 `;
 
 const Type1Container = styled.div`
+  @media (max-width: 600px) {
+    column-gap: 18px;
+  }
   @media (max-width: 960px) {
     grid-column: span 12;
   }
@@ -87,15 +92,18 @@ const Type1Image = styled(Img)`
 `;
 
 const Type2Container = styled.div`
+  @media (max-width: 600px) {
+    column-gap: 18px;
+  }
   @media (max-width: 960px) {
     display: grid;
     grid-template: auto/repeat(12,1fr);
-    column-gap: 30px;
-    row-gap: 0;
     grid-auto-flow: row;
     grid-area: auto/1/auto/-1;
     grid-column: span 12;
   }
+  column-gap: 30px;
+  row-gap: 0;
   grid-column: span 3;
 `;
 
@@ -123,6 +131,9 @@ const Type2Image = styled(Img)`
 `;
 
 const Section2 = styled.div`
+  @media (max-width: 600px) {
+    column-gap: 18px;
+  }
   @media (max-width: 960px) {
     grid-column: span 12;
   }
@@ -140,6 +151,9 @@ const Section2 = styled.div`
 `;
 
 const Type4Container = styled.div`
+@media (max-width: 600px) {
+  column-gap: 18px;
+}
   @media (max-width: 1280px) {
     grid-column: span 12;
   }
@@ -170,6 +184,9 @@ const Type4Image = styled(Img)`
 `;
 
 const Type5Container = styled.div`
+@media (max-width: 600px) {
+  column-gap: 18px;
+}
   @media (max-width: 1280px) {
     display: grid;
     grid-auto-flow: row;
@@ -211,6 +228,9 @@ const Type5Image = styled(Img)`
 `;
 
 const Section3 = styled.div`
+  @media (max-width: 600px) {
+    column-gap: 18px;
+  }
   @media (max-width: 960px) {
     grid-column: span 12;
   }
