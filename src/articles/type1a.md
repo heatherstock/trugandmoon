@@ -1,7 +1,7 @@
 ---
-title: "Primary"
+title: "type1a"
 tag: gardening
-type: primary
+display: 1
 path: "/articles/primary"
 featuredImage: ../images/primary.jpg
 ---

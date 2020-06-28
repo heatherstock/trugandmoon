@@ -23,83 +23,30 @@ const Welcome = styled.div`
   grid-column: span 12;
 `;
 
-const RightHand = styled.div`
-@media (max-width: 900px) {
-  display: none;
-}
-@media (min-width: 900px) {
-  grid-column: col-start 10 / span 3;
-  grid-row: span 4;
-}
-`;
-
-const Bottom = styled.div`
-@media (max-width: 900px) {
-  grid-column: span 3;
-}
-@media (min-width: 900px) {
-  display: none;
-}
+const Subtitle = styled.div`
+  grid-column: span 12;
+  font-style: italic;
 `;
 
 const Type1 = styled.div`
-@media (max-width: 600px) {
-  grid-column: span 12;
-}
-@media (min-width: 600px) {
-  grid-column: span 6;
-}
-@media (min-width: 900px) {
-  grid-column: span 4;
-}
+  grid-column: span 3;
 `;
 
 const Type1Image = styled(Img)`
-  height: 250px;
+  grid-column: span 6;
+  height: 350px;
 `;
-
-const Type1ImageContainer = styled.div`
-  @media (max-width: 600px) {
-    grid-column: span 12;
-  }
-  @media (min-width: 600px) {
-    grid-column: span 6;
-  }
-  @media (min-width: 900px) {
-    grid-column: span 5;
-  }
-`;
-
 
 const Type2 = styled.div`
-@media (max-width: 400px) {
-  grid-column: span 12;
-}
-@media (min-width: 400px) {
-  grid-column: span 6;
-}
-@media (min-width: 600px) {
-  grid-column: span 4;
-}
-@media (min-width: 900px) {
   grid-column: span 3;
-}
+`;
+
+const Type2Image = styled(Img)`
+  height: 150px;
 `;
 
 const Type3 = styled.div`
-@media (max-width: 600px) {
-  grid-column: span 12;
-}
-@media (min-width: 600px) {
-  grid-column: span 4;
-}
-@media (min-width: 900px) {
   grid-column: span 3;
-}
-`;
-
-const SecondaryImage = styled(Img)`
-  height: 150px;
 `;
 
 const Edition = styled.h1`
@@ -125,196 +72,106 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => (
   <Layout>
     <SEO title="Home" />
     <Wrapper>
       <Welcome>
-      {data.welcome.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Edition>{node.frontmatter.title}</Edition>
-          <p>{node.htmlAst.children[0].children[0].value}</p>
+        <div>
+          <Edition>{edges[0].node.frontmatter.title}</Edition>
+          <p>{edges[0].node.htmlAst.children[0].children[0].value}</p>
         </div>
-      ))}
       </Welcome>
-      {data.primary.edges.map(({ node }) => (
-      <Type1ImageContainer>
-        <div key={node.id}>
-          <Type1Image fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-        </div>
-      </Type1ImageContainer>
-      ))}
+      <Subtitle>Subtitle</Subtitle>
       <Type1>
-        {data.primary.edges.map(({ node }) => (
-          <div key={node.id}>
-            <StyledLink to={node.fields.slug}>
-            <Article>{node.frontmatter.title}</Article>
-            </StyledLink>
-            <p>{node.excerpt}</p>
-            <p>{node.frontmatter.tag}</p>
-          </div>
-        ))}
+        <StyledLink to={edges[1].node.fields.slug}>
+          <Article>{edges[1].node.frontmatter.title}</Article>
+        </StyledLink>
+        <p>{edges[1].node.excerpt}</p>
+        <p>{edges[1].node.frontmatter.tag}</p>
       </Type1>
-      <RightHand>
-        <div>
-          <h2>Browse Tags</h2>
-          {data.rightHandRail.group.map(({ tag }) => (
-          <p>{tag}</p>
-          ))}
-        </div>
-      </RightHand>
-      {data.secondary1.edges.map(({ node }) => (
-        <Type2>
-          <div key={node.id}>
-            <SecondaryImage fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-            <StyledLink to={node.fields.slug}>
-            <Article>{node.frontmatter.title}</Article>
-            </StyledLink>
-            <p>{node.excerpt}</p>
-            <p>{node.frontmatter.tag}</p>
-          </div>
-        </Type2>
-      ))}
-      {data.secondary2.edges.map(({ node }) => (
-        <Type3>
-          <div key={node.id}>
-            <SecondaryImage fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-            <StyledLink to={node.fields.slug}>
-            <Article>{node.frontmatter.title}</Article>
-            </StyledLink>
-            <p>{node.excerpt}</p>
-            <p>{node.frontmatter.tag}</p>
-          </div>
-        </Type3>
-      ))}
-      {data.tertiary.edges.map(({ node }) => (
-        <Type2>
-          <div key={node.id}>
-            <StyledLink to={node.fields.slug}>
-            <Article>{node.frontmatter.title}</Article>
-            </StyledLink>
-            <p>{node.excerpt}</p>
-            <p>{node.frontmatter.tag}</p>
-          </div>
-        </Type2>
-      ))}
-      <Bottom>
-        <div>
-          <h2>Browse Tags</h2>
-          {data.rightHandRail.group.map(({ tag }) => (
-          <p>{tag}</p>
-          ))}
-        </div>
-      </Bottom>
+      <Type1Image fluid={edges[1].node.frontmatter.featuredImage.childImageSharp.fluid} />
+      <Type2>
+        <Type2Image fluid={edges[3].node.frontmatter.featuredImage.childImageSharp.fluid} />
+        <StyledLink to={edges[3].node.fields.slug}>
+          <Article>{edges[3].node.frontmatter.title}</Article>
+        </StyledLink>
+        <p>{edges[3].node.excerpt}</p>
+        <p>{edges[3].node.frontmatter.tag}</p>
+      </Type2>
+      <Type3>
+        <StyledLink to={edges[5].node.fields.slug}>
+          <Article>{edges[5].node.frontmatter.title}</Article>
+        </StyledLink>
+        <p>{edges[5].node.excerpt}</p>
+        <p>{edges[5].node.frontmatter.tag}</p>
+      </Type3>
+      <Type3>
+        <StyledLink to={edges[6].node.fields.slug}>
+          <Article>{edges[6].node.frontmatter.title}</Article>
+        </StyledLink>
+        <p>{edges[6].node.excerpt}</p>
+        <p>{edges[6].node.frontmatter.tag}</p>
+      </Type3>
+      <Type3>
+        <StyledLink to={edges[7].node.fields.slug}>
+          <Article>{edges[7].node.frontmatter.title}</Article>
+        </StyledLink>
+        <p>{edges[7].node.excerpt}</p>
+        <p>{edges[7].node.frontmatter.tag}</p>
+      </Type3>
+      <Type3>
+        <StyledLink to={edges[8].node.fields.slug}>
+          <Article>{edges[8].node.frontmatter.title}</Article>
+        </StyledLink>
+        <p>{edges[8].node.excerpt}</p>
+        <p>{edges[8].node.frontmatter.tag}</p>
+      </Type3>
+      <Subtitle>Subtitle</Subtitle>
+      <Type1>
+      <StyledLink to={edges[2].node.fields.slug}>
+          <Article>{edges[2].node.frontmatter.title}</Article>
+        </StyledLink>
+        <p>{edges[2].node.excerpt}</p>
+        <p>{edges[2].node.frontmatter.tag}</p>
+      </Type1>
+      <Type1Image fluid={edges[2].node.frontmatter.featuredImage.childImageSharp.fluid} />
+      <Type2>
+        <Type2Image fluid={edges[4].node.frontmatter.featuredImage.childImageSharp.fluid} />
+        <StyledLink to={edges[4].node.fields.slug}>
+          <Article>{edges[4].node.frontmatter.title}</Article>
+        </StyledLink>
+        <p>{edges[4].node.excerpt}</p>
+        <p>{edges[4].node.frontmatter.tag}</p>
+      </Type2>
     </Wrapper>
   </Layout>
 )
 
 export const query = graphql`
   query {
-    welcome: allMarkdownRemark(filter: {frontmatter: {type: {eq: "welcome"}}}) {
+    allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}) {
       totalCount
       edges {
         node {
           id
           frontmatter {
             title
+            tag
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           htmlAst 
           fields {
             slug
           }
-        }
-      }
-    }
-    primary: allMarkdownRemark(filter: {frontmatter: {type: {eq: "primary"}}}) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            tag
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          fields {
-            slug
-          }
           excerpt
         }
-      }
-    }
-    secondary1: allMarkdownRemark(filter: {frontmatter: {type: {eq: "secondaryType1"}}}) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            tag
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
-    secondary2: allMarkdownRemark(filter: {frontmatter: {type: {eq: "secondaryType2"}}}) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            tag
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
-    tertiary: allMarkdownRemark(filter: {frontmatter: {type: {eq: "tertiary"}}}) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            tag
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
-    rightHandRail: allMarkdownRemark {
-      group(field: frontmatter___tag) {
-        tag: fieldValue
       }
     }
   }

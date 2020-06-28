@@ -1,7 +1,7 @@
 ---
-title: "Secondary2"
+title: "Type2a"
 tag: gardening
-type: secondaryType1
+display: 3
 path: "/articles/secondary2"
 featuredImage: ../images/secondary2.jpeg
 ---

@@ -1,7 +1,7 @@
 ---
-title: "Secondary1"
+title: "Type1b"
 tag: spiritual
-type: secondaryType1
+display: 2
 path: "/articles/secondary1"
 featuredImage: ../images/secondary1.jpg
 ---

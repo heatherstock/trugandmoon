@@ -1,7 +1,7 @@
 ---
-title: "Secondary3"
+title: "Type2b"
 tag: inspirational
-type: secondaryType2
+display: 4
 path: "/articles/secondary3"
 featuredImage: ../images/secondary3.jpg
 ---
