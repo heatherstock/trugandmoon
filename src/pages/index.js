@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   grid-gap: 18px;
 }
   display: grid;
+  grid-gap: 30px;
   grid-template: auto/repeat(12,1fr);
   grid-auto-flow: row;
   overflow: hidden;
@@ -103,10 +104,6 @@ const Type2Image = styled(Img)`
   height: 150px;
 `;
 
-const Type3Text = styled.div`
-  grid-column: span 3;
-`;
-
 const Section2 = styled.div`
   @media (max-width: 960px) {
     grid-column: span 12;
@@ -128,7 +125,6 @@ const Type4Container = styled.div`
     grid-column: span 12;
   }
   display: grid;
-  grid-gap: 30px;
   grid-auto-flow: row;
   grid-template: auto/repeat(12,1fr);
   grid-area: auto/1/auto/-1;
@@ -155,12 +151,12 @@ const Type4Image = styled(Img)`
 const Type5Container = styled.div`
   @media (max-width: 1280px) {
     display: grid;
-    grid-gap: 30px;
     grid-auto-flow: row;
     grid-template: auto/repeat(12,1fr);
     grid-column: span 12;
   }
   grid-column: span 3;
+  grid-gap: 30px;
 `;
 
 const Type5Text = styled.div`
@@ -190,6 +186,49 @@ const Type5Image = styled(Img)`
   grid-row-start: 1;
 }
   height: 150px;
+`;
+
+const Section3 = styled.div`
+  @media (max-width: 960px) {
+    grid-column: span 12;
+  }
+  @media (min-width: 960px) and (max-width: 1280px) {
+    grid-column: 9/-1;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 1280px) {
+    grid-row-start: 2;
+  }
+  display: grid;
+  grid-gap: 30px;
+  grid-auto-flow: row;
+  grid-template: auto/repeat(12,1fr);
+  grid-column: 1/-1;
+`;
+
+const Type3aText = styled.div`
+  @media (max-width: 600px) {
+    grid-column: span 12;
+  }
+  @media (min-width: 1280px) {
+    grid-column: span 3;
+  }
+  grid-area: auto/1/auto/-1;
+  grid-column: span 6;
+`;
+
+const Type3bText = styled.div`
+  @media (max-width: 600px) {
+    grid-column: span 12;
+  }
+  @media (min-width: 600px) and (max-width: 960px) {
+    grid-row-start: 2;
+  }
+  @media (min-width: 1280px) {
+    grid-column: span 3;
+  }
+  grid-area: auto/1/auto/-1;
+  grid-column: span 6;
 `;
 
 const Edition = styled.h1`
@@ -273,37 +312,37 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => (
           </Type5Text>
         </Type5Container>
       </Section2>
+      <Section3>
+        <Type3aText>
+          <StyledLink to={edges[5].node.fields.slug}>
+            <Article>{edges[5].node.frontmatter.title}</Article>
+          </StyledLink>
+          <p>{edges[5].node.excerpt}</p>
+          <p>{edges[5].node.frontmatter.tag}</p>
+        </Type3aText>
+        <Type3aText>
+          <StyledLink to={edges[6].node.fields.slug}>
+            <Article>{edges[6].node.frontmatter.title}</Article>
+          </StyledLink>
+          <p>{edges[6].node.excerpt}</p>
+          <p>{edges[6].node.frontmatter.tag}</p>
+        </Type3aText>
+        <Type3bText>
+          <StyledLink to={edges[7].node.fields.slug}>
+            <Article>{edges[7].node.frontmatter.title}</Article>
+          </StyledLink>
+          <p>{edges[7].node.excerpt}</p>
+          <p>{edges[7].node.frontmatter.tag}</p>
+        </Type3bText>
+        <Type3bText>
+          <StyledLink to={edges[8].node.fields.slug}>
+            <Article>{edges[8].node.frontmatter.title}</Article>
+          </StyledLink>
+          <p>{edges[8].node.excerpt}</p>
+          <p>{edges[8].node.frontmatter.tag}</p>
+        </Type3bText>
+      </Section3>
     </Wrapper>
-    {/* <Wrapper>
-      <Type3Text>
-        <StyledLink to={edges[5].node.fields.slug}>
-          <Article>{edges[5].node.frontmatter.title}</Article>
-        </StyledLink>
-        <p>{edges[5].node.excerpt}</p>
-        <p>{edges[5].node.frontmatter.tag}</p>
-      </Type3Text>
-      <Type3Text>
-        <StyledLink to={edges[6].node.fields.slug}>
-          <Article>{edges[6].node.frontmatter.title}</Article>
-        </StyledLink>
-        <p>{edges[6].node.excerpt}</p>
-        <p>{edges[6].node.frontmatter.tag}</p>
-      </Type3Text>
-      <Type3Text>
-        <StyledLink to={edges[7].node.fields.slug}>
-          <Article>{edges[7].node.frontmatter.title}</Article>
-        </StyledLink>
-        <p>{edges[7].node.excerpt}</p>
-        <p>{edges[7].node.frontmatter.tag}</p>
-      </Type3Text>
-      <Type3Text>
-        <StyledLink to={edges[8].node.fields.slug}>
-          <Article>{edges[8].node.frontmatter.title}</Article>
-        </StyledLink>
-        <p>{edges[8].node.excerpt}</p>
-        <p>{edges[8].node.frontmatter.tag}</p>
-      </Type3Text>
-    </Wrapper> */}
   </Layout>
 )
 
