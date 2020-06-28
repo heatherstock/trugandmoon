@@ -13,9 +13,11 @@ const Wrapper = styled.div`
 const TitleLink = styled(Link)`
 @media (max-width: 600px) {
   font-size: 42px;
+  line-height: 40px
 }
 @media (min-width: 600px) {
   font-size: 72px;
+  line-height: 72px;
 }
   font-family: Work Sans, sans serif;
   font-weight: 800;

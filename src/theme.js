@@ -4,9 +4,14 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body {
+    @media (max-width: 600px) {
+      font-size: 22px;
+      line-height: 32px
+    }
     margin: auto;
     font-family: Baskervville, serif;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 26px;
     position: relative;
     min-height: 100vh;
     max-width: 100%;
