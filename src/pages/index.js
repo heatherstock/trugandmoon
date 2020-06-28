@@ -7,19 +7,17 @@ import SEO from "../components/seo"
 
 const Wrapper = styled.div`
 @media (max-width: 600px) {
-  grid-gap: 18px;
+  column-gap: 18px;
+  row-gap: 0;
 }
   display: grid;
-  grid-gap: 30px;
+  column-gap: 30px;
+  row-gap: 0;
   grid-template: auto/repeat(12,1fr);
   grid-auto-flow: row;
   overflow: hidden;
 }
 `;
-
-// 80rem = 1280
-// 60rem = 960
-// 37.5rem = 600
 
 const Welcome = styled.div`
   grid-column: span 12;
@@ -30,15 +28,33 @@ const Section1 = styled.div`
     grid-column: span 12;
   }
   display: grid;
-  grid-gap: 30px;
+  column-gap: 30px;
+  row-gap: 0;
   grid-template: auto/repeat(12,1fr);
   grid-auto-flow: row;
   grid-column: span 12;
 `;
 
-const Subtitle = styled.div`
-  grid-column: span 12;
+const Subtitle = styled.h1`
+  grid-column: 1 / -1;
+  font-size: 18px;
+  color: palevioletred;
   font-style: italic;
+  padding-top: 8px;
+  border-top: 1px solid #cec6b9;
+`;
+
+const Subtitle2 = styled.h1`
+  @media (min-width: 960px) and (max-width: 1280px) {
+    grid-column: span 4;
+    grid-template-columns: 1fr;
+  }
+  grid-column: 1 / -1;
+  font-size: 18px;
+  color: palevioletred;
+  font-style: italic;
+  padding-top: 8px;
+  border-top: 1px solid #cec6b9;
 `;
 
 const Type1Container = styled.div`
@@ -47,7 +63,8 @@ const Type1Container = styled.div`
   }
   grid-area: auto/1/auto/-1;
   display: grid;
-  grid-gap: 30px;
+  column-gap: 30px;
+  row-gap: 0;
   grid-template: auto/repeat(12,1fr);
   grid-auto-flow: row;
   grid-column: span 9;
@@ -73,7 +90,8 @@ const Type2Container = styled.div`
   @media (max-width: 960px) {
     display: grid;
     grid-template: auto/repeat(12,1fr);
-    grid-gap: 30px;
+    column-gap: 30px;
+    row-gap: 0;
     grid-auto-flow: row;
     grid-area: auto/1/auto/-1;
     grid-column: span 12;
@@ -115,7 +133,8 @@ const Section2 = styled.div`
     grid-column: span 12;
   }
   display: grid;
-  grid-gap: 30px;
+  column-gap: 30px;
+  row-gap: 0;
   grid-template: auto/repeat(12,1fr);
   grid-auto-flow: row;
 `;
@@ -125,6 +144,8 @@ const Type4Container = styled.div`
     grid-column: span 12;
   }
   display: grid;
+  column-gap: 30px;
+  row-gap: 0;
   grid-auto-flow: row;
   grid-template: auto/repeat(12,1fr);
   grid-area: auto/1/auto/-1;
@@ -156,7 +177,8 @@ const Type5Container = styled.div`
     grid-column: span 12;
   }
   grid-column: span 3;
-  grid-gap: 30px;
+  column-gap: 30px;
+  row-gap: 0;
 `;
 
 const Type5Text = styled.div`
@@ -193,14 +215,15 @@ const Section3 = styled.div`
     grid-column: span 12;
   }
   @media (min-width: 960px) and (max-width: 1280px) {
-    grid-column: 9/-1;
+    grid-column: span 4;
     grid-template-columns: 1fr;
   }
   @media (min-width: 1280px) {
     grid-row-start: 2;
   }
   display: grid;
-  grid-gap: 30px;
+  column-gap: 30px;
+  row-gap: 0;
   grid-auto-flow: row;
   grid-template: auto/repeat(12,1fr);
   grid-column: 1/-1;
@@ -209,6 +232,10 @@ const Section3 = styled.div`
 const Type3aText = styled.div`
   @media (max-width: 600px) {
     grid-column: span 12;
+  }
+  @media (min-width: 960px) and (max-width: 1280px) {
+    grid-column: span 4;
+    grid-template-columns: 1fr;
   }
   @media (min-width: 1280px) {
     grid-column: span 3;
@@ -223,6 +250,11 @@ const Type3bText = styled.div`
   }
   @media (min-width: 600px) and (max-width: 960px) {
     grid-row-start: 2;
+    grid-column: span 6;
+  }
+  @media (min-width: 960px) and (max-width: 1280px) {
+    grid-column: span 4;
+    grid-template-columns: 1fr;
   }
   @media (min-width: 1280px) {
     grid-column: span 3;
@@ -313,6 +345,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => (
         </Type5Container>
       </Section2>
       <Section3>
+      <Subtitle2>Subtitle</Subtitle2>
         <Type3aText>
           <StyledLink to={edges[5].node.fields.slug}>
             <Article>{edges[5].node.frontmatter.title}</Article>
