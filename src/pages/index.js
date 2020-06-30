@@ -290,7 +290,7 @@ const Edition = styled.h1`
 @media (min-width: 600px) {
   font-size: 42px;
 }
-  color: darkOliveGreen;
+  color: yellow;
 `;
 
 const Article = styled.h2`
