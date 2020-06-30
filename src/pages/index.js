@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Wrapper = styled.div`
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   column-gap: 18px;
 }
   display: grid;
@@ -23,10 +23,10 @@ const Welcome = styled.div`
 `;
 
 const Section1 = styled.div`
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   column-gap: 18px;
 }
-  @media (max-width: 960px) {
+  @media (max-width: 959px) {
     grid-column: span 12;
   }
   display: grid;
@@ -47,7 +47,7 @@ const Subtitle = styled.h1`
 `;
 
 const Subtitle2 = styled.h1`
-  @media (min-width: 960px) and (max-width: 1280px) {
+  @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
   }
@@ -60,10 +60,10 @@ const Subtitle2 = styled.h1`
 `;
 
 const Type1Container = styled.div`
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
     column-gap: 18px;
   }
-  @media (max-width: 960px) {
+  @media (max-width: 959px) {
     grid-column: span 12;
   }
   grid-area: auto/1/auto/-1;
@@ -76,7 +76,7 @@ const Type1Container = styled.div`
 `;
 
 const Type1Text = styled.div`
-@media (max-width: 960px) {
+@media (max-width: 959px) {
   grid-area: 2/1/auto/-1;
 }
     grid-column: span 4;
@@ -84,7 +84,7 @@ const Type1Text = styled.div`
 `;
 
 const Type1Image = styled(Img)`
-  @media (max-width: 960px) {
+  @media (max-width: 959px) {
     grid-area: 1/1/auto/-1;
   }
   grid-column: span 8;
@@ -92,10 +92,10 @@ const Type1Image = styled(Img)`
 `;
 
 const Type2Container = styled.div`
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
     column-gap: 18px;
   }
-  @media (max-width: 960px) {
+  @media (max-width: 959px) {
     display: grid;
     grid-template: auto/repeat(12,1fr);
     grid-auto-flow: row;
@@ -108,10 +108,10 @@ const Type2Container = styled.div`
 `;
 
 const Type2Text = styled.div`
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
     grid-column: span 12;
   }
-  @media (min-width: 600px) and (max-width: 960px) {
+  @media (min-width: 600px) and (max-width: 959px) {
     grid-column: span 6;
     grid-area: 1/1/auto/-1;
     grid-column-start: 7;
@@ -119,10 +119,10 @@ const Type2Text = styled.div`
 `;
 
 const Type2Image = styled(Img)`
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
     grid-column: span 12;
   }
-  @media (min-width: 600px) and (max-width: 960px) {
+  @media (min-width: 600px) and (max-width: 959px) {
     grid-column: span 6;
     grid-area: 1/1/auto/-1;
     grid-column-end: 7;
@@ -131,10 +131,10 @@ const Type2Image = styled(Img)`
 `;
 
 const Section2 = styled.div`
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
     column-gap: 18px;
   }
-  @media (max-width: 960px) {
+  @media (max-width: 959px) {
     grid-column: span 12;
   }
   @media (min-width: 960px) {
@@ -151,10 +151,10 @@ const Section2 = styled.div`
 `;
 
 const Type4Container = styled.div`
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   column-gap: 18px;
 }
-  @media (max-width: 1280px) {
+  @media (max-width: 1279px) {
     grid-column: span 12;
   }
   display: grid;
@@ -167,7 +167,7 @@ const Type4Container = styled.div`
 `;
 
 const Type4Text = styled.div`
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   grid-column: span 12;
   grid-area: 2/1/auto/-1;
 }
@@ -175,7 +175,7 @@ const Type4Text = styled.div`
 `;
 
 const Type4Image = styled(Img)`
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   grid-column: span 12;
   grid-area: 1/1/auto/-1;
 }
@@ -184,10 +184,10 @@ const Type4Image = styled(Img)`
 `;
 
 const Type5Container = styled.div`
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   column-gap: 18px;
 }
-  @media (max-width: 1280px) {
+  @media (max-width: 1279px) {
     display: grid;
     grid-auto-flow: row;
     grid-template: auto/repeat(12,1fr);
@@ -199,28 +199,28 @@ const Type5Container = styled.div`
 `;
 
 const Type5Text = styled.div`
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   grid-column: span 12;
 }
-@media (min-width: 600px) and (max-width: 960px) {
+@media (min-width: 600px) and (max-width: 959px) {
   grid-column: 7 / -1;
   grid-row-start: 1;
 }
-  @media (min-width: 960px) and (max-width: 1280px) {
+  @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: 1 / 7;
     grid-row-start: 1;
   }
 `;
 
 const Type5Image = styled(Img)`
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   grid-column: span 12;
 }
-@media (min-width: 600px) and (max-width: 960px) {
+@media (min-width: 600px) and (max-width: 959px) {
   grid-column: 1 / 7;
   grid-row-start: 1;
 }
-@media (min-width: 960px) and (max-width: 1280px) {
+@media (min-width: 960px) and (max-width: 1279px) {
   grid-column: 7 / -1;
   grid-row-start: 1;
 }
@@ -228,13 +228,13 @@ const Type5Image = styled(Img)`
 `;
 
 const Section3 = styled.div`
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
     column-gap: 18px;
   }
-  @media (max-width: 960px) {
+  @media (max-width: 959px) {
     grid-column: span 12;
   }
-  @media (min-width: 960px) and (max-width: 1280px) {
+  @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
   }
@@ -250,10 +250,10 @@ const Section3 = styled.div`
 `;
 
 const Type3aText = styled.div`
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
     grid-column: span 12;
   }
-  @media (min-width: 960px) and (max-width: 1280px) {
+  @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
   }
@@ -265,14 +265,14 @@ const Type3aText = styled.div`
 `;
 
 const Type3bText = styled.div`
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
     grid-column: span 12;
   }
-  @media (min-width: 600px) and (max-width: 960px) {
+  @media (min-width: 600px) and (max-width: 959px) {
     grid-row-start: 2;
     grid-column: span 6;
   }
-  @media (min-width: 960px) and (max-width: 1280px) {
+  @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
   }
@@ -284,7 +284,7 @@ const Type3bText = styled.div`
 `;
 
 const Edition = styled.h1`
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   font-size: 32px;
 }
 @media (min-width: 600px) {
