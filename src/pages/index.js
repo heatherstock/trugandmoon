@@ -53,7 +53,7 @@ const Subtitle2 = styled.h1`
   }
   grid-column: 1 / -1;
   font-size: 18px;
-  color: palevioletred;
+  color: blue;
   font-style: italic;
   padding-top: 8px;
   border-top: 1px solid #cec6b9;
