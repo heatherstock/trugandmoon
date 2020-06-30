@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Hello, World!`,
+    title: `Trug & Moon`,
     description: `Know thyself and thou shalt know the Universe and God.`,
     author: `@trugandmoon`,
     menuLinks:[
