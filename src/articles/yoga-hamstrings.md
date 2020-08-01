@@ -5,4 +5,4 @@ display: 4
 path: "/articles/yoga-hamstrings"
 featuredImage: ../images/secondary3.jpg
 ---
-Yoga stuff - still to come
+Coming soon
