@@ -131,6 +131,7 @@ export const Type2Image = styled(Img)`
     grid-column-end: 7;
   }
   height: 150px;
+  margin-bottom: 8px;
 `;
 
 export const Section2 = styled.div`
@@ -262,10 +263,15 @@ export const Section3 = styled.div`
 export const Type3aText = styled.div`
   @media (max-width: 599px) {
     grid-column: span 12;
+    border-bottom: 1px solid #cec6b9;
+  }
+  @media (min-width: 600px) and (max-width: 959px) {
+    border-top: 1px solid #cec6b9;
   }
   @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
+    border-bottom: 1px solid #cec6b9;
   }
   @media (min-width: 1280px) {
     grid-column: span 3;
@@ -280,6 +286,8 @@ export const Type3aText = styled.div`
 export const Type3bText = styled.div`
   @media (max-width: 599px) {
     grid-column: span 12;
+    border-top: 1px solid #cec6b9;
+
   }
   @media (min-width: 600px) and (max-width: 959px) {
     grid-row-start: 2;
@@ -288,6 +296,8 @@ export const Type3bText = styled.div`
   @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
+        border-top: 1px solid #cec6b9;
+
   }
   @media (min-width: 1280px) {
     grid-column: span 3;
@@ -326,6 +336,7 @@ export const StyledLink = styled(Link)`
 export const tag = styled.p`
   font-family: Work Sans, sans serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   color: indianred;
+  margin: 0px;
 `;
