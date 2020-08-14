@@ -3,7 +3,7 @@ title: "Finding your purpose - part 1"
 tag: inspiration
 display: 2
 path: "/articles/finding-purpose-1"
-featuredImage: ../images/secondary1.jpg
+featuredImage: ../images/find-purpose-1.jpg
 ---
 Finding your life's purpose and achieving "work / life balance" can generally be thought of as myths for most people. A very small fraction of society knows their "purpose" in life, and I'd probably put a bet on it that even the majority of those people are only pretending to have their shit together anyway. Work / life balance is another slippery ideal preached to us by workplace "mindfulness" initiatives that seek to put both the blame and pressure to fix the problem back on us workers.
 
