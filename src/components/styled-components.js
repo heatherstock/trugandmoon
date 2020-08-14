@@ -98,10 +98,16 @@ export const Type2Container = styled.div`
     grid-auto-flow: row;
     grid-area: auto/1/auto/-1;
     grid-column: span 12;
+    padding-top: 15px;
+    margin-top: -10px;
+    border-top: 1px solid #cec6b9;
   }
   column-gap: 30px;
   row-gap: 0;
   grid-column: span 3;
+  padding-left: 15px;
+  margin-left: -10px;
+  border-left: 1px solid #cec6b9;
 `;
 
 export const Type2Text = styled.div`
@@ -190,10 +196,16 @@ export const Type5Container = styled.div`
     grid-auto-flow: row;
     grid-template: auto/repeat(12,1fr);
     grid-column: span 12;
+    padding-top: 15px;
+    margin-top: -10px;
+    border-top: 1px solid #cec6b9;
   }
   grid-column: span 3;
   column-gap: 30px;
   row-gap: 0;
+  padding-left: 15px;
+  margin-left: -10px;
+  border-left: 1px solid #cec6b9;
 `;
 
 export const Type5Text = styled.div`
@@ -260,6 +272,9 @@ export const Type3aText = styled.div`
   }
   grid-area: auto/1/auto/-1;
   grid-column: span 6;
+  padding-left: 15px;
+  margin-left: -10px;
+  border-left: 1px solid #cec6b9;
 `;
 
 export const Type3bText = styled.div`
@@ -279,6 +294,9 @@ export const Type3bText = styled.div`
   }
   grid-area: auto/1/auto/-1;
   grid-column: span 6;
+  padding-left: 15px;
+  margin-left: -10px;
+  border-left: 1px solid #cec6b9;
 `;
 
 export const Edition = styled.h1`
