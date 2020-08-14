@@ -275,12 +275,12 @@ export const Type3aText = styled.div`
   }
   @media (min-width: 1280px) {
     grid-column: span 3;
+    padding-left: 15px;
+    margin-left: -10px;
+    border-left: 1px solid #cec6b9;
   }
   grid-area: auto/1/auto/-1;
   grid-column: span 6;
-  padding-left: 15px;
-  margin-left: -10px;
-  border-left: 1px solid #cec6b9;
 `;
 
 export const Type3bText = styled.div`
@@ -301,12 +301,12 @@ export const Type3bText = styled.div`
   }
   @media (min-width: 1280px) {
     grid-column: span 3;
+    padding-left: 15px;
+    margin-left: -10px;
+    border-left: 1px solid #cec6b9;
   }
   grid-area: auto/1/auto/-1;
   grid-column: span 6;
-  padding-left: 15px;
-  margin-left: -10px;
-  border-left: 1px solid #cec6b9;
 `;
 
 export const Edition = styled.h1`
