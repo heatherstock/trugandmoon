@@ -10,11 +10,12 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
-    color: #0f1433;
+    color: #154726;
 
   }
   h1, h2, h3 {
     font-family: Work Sans, sans serif;
     color: #154726;
+    font-weight: 800;
   }
 `;

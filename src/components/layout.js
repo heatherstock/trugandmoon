@@ -21,7 +21,7 @@ const Footer = styled.footer`
   bottom: 0;
   width: 100%;
   height: 56px;
-  border-top: 1px solid #cec6b9;
+  border-top: 1px solid #154726;
 `;
 
 const Layout = ({ children }) => {

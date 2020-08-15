@@ -36,13 +36,13 @@ export const Section1 = styled.div`
 
 export const Subtitle = styled.h1`
   grid-column: 1 / -1;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 30px;
+  line-height: 36px;
   color: palevioletred;
   font-style: italic;
   padding: 8px 0;
-  border-top: 1px solid #cec6b9;
-  border-bottom: 1px solid #cec6b9;
+  border-top: 5px solid #154726;
+  border-bottom: 1px solid #154726;
 `;
 
 export const Subtitle2 = styled.h1`
@@ -52,13 +52,13 @@ export const Subtitle2 = styled.h1`
     margin-bottom: 0px;
   }
   grid-column: 1 / -1;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 30px;
+  line-height: 36px;
   color: palevioletred;
   font-style: italic;
   padding: 8px 0;
-  border-top: 1px solid #cec6b9;
-  border-bottom: 1px solid #cec6b9;
+  border-top: 5px solid #154726;
+  border-bottom: 1px solid #154726;
   
 `;
 
@@ -107,14 +107,14 @@ export const Type2Container = styled.div`
     grid-column: span 12;
     padding-top: 15px;
     margin-top: -10px;
-    border-top: 1px solid #cec6b9;
+    border-top: 5px solid #154726;
   }
   column-gap: 30px;
   row-gap: 0;
   grid-column: span 3;
   padding-left: 15px;
   margin-left: -15px;
-  border-left: 1px solid #cec6b9;
+  border-left: 1px solid #154726;
 `;
 
 export const Type2Text = styled.div`
@@ -165,6 +165,9 @@ export const Type4Container = styled.div`
 @media (max-width: 599px) {
   column-gap: 18px;
 }
+@media (min-width: 960px) and (max-width: 1279px) {
+  margin-bottom: 190px;
+}
   @media (max-width: 1279px) {
     grid-column: span 12;
   }
@@ -207,14 +210,15 @@ export const Type5Container = styled.div`
     grid-column: span 12;
     padding-top: 15px;
     margin-top: -10px;
-    border-top: 1px solid #cec6b9;
+    border-top: 5px solid #154726;
   }
   grid-column: span 3;
   column-gap: 30px;
   row-gap: 0;
   padding-left: 15px;
   margin-left: -15px;
-  border-left: 1px solid #cec6b9;
+  border-left: 1px solid #154726;
+  margin-bottom: 15px;
 `;
 
 export const Type5Text = styled.div`
@@ -272,22 +276,22 @@ export const Section3 = styled.div`
 export const Type3aText = styled.div`
   @media (max-width: 599px) {
     grid-column: span 12;
-    border-bottom: 1px solid #cec6b9;
+    border-bottom: 1px solid #154726;
   }
   @media (min-width: 600px) and (max-width: 959px) {
-    border-top: 1px solid #cec6b9;
+    border-top: 5px solid #154726;
   }
   @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
     padding: 5px 5px 0;
-    border-bottom: 1px solid #cec6b9;
+    border-bottom: 1px solid #154726;
   }
   @media (min-width: 1280px) {
     grid-column: span 3;
     padding-left: 15px;
     margin-left: -10px;
-    border-left: 1px solid #cec6b9;
+    border-left: 1px solid #154726;
   }
   grid-area: auto/1/auto/-1;
   grid-column: span 6;
@@ -296,7 +300,7 @@ export const Type3aText = styled.div`
 export const Type3bText = styled.div`
   @media (max-width: 599px) {
     grid-column: span 12;
-    border-top: 1px solid #cec6b9;
+    border-top: 5px solid #154726;
 
   }
   @media (min-width: 600px) and (max-width: 959px) {
@@ -307,7 +311,7 @@ export const Type3bText = styled.div`
     grid-column: span 4;
     grid-template-columns: 1fr;
     padding: 5px 5px 0;
-    border-bottom: 1px solid #cec6b9;
+    border-bottom: 1px solid #154726;
     margin-bottom: -1px;
 
   }
@@ -315,7 +319,7 @@ export const Type3bText = styled.div`
     grid-column: span 3;
     padding-left: 15px;
     margin-left: -10px;
-    border-left: 1px solid #cec6b9;
+    border-left: 1px solid #154726;
   }
   grid-area: auto/1/auto/-1;
   grid-column: span 6;
@@ -323,12 +327,14 @@ export const Type3bText = styled.div`
 
 export const Edition = styled.h1`
 @media (max-width: 599px) {
-  font-size: 32px;
+  font-size: 36px;
+  line-height: 42px;
 }
 @media (min-width: 600px) {
-  font-size: 42px;
+  font-size: 48px;
+  line-height: 60px;
 }
-  font-weight: 800;
+margin: 16px auto;
 `;
 
 export const Article = styled.h2`
@@ -338,7 +344,6 @@ export const Article = styled.h2`
 }
   font-size: 36px;
   line-height: 42px;
-  font-weight: 800;
   margin: 1px auto;
 `;
 
@@ -353,9 +358,9 @@ export const StyledLink = styled(Link)`
 export const Tag = styled.p`
   font-family: Work Sans, sans serif;
   font-weight: 500;
-  font-size: 19px;
-  line-height: 24px;
-  color: #eb338f;
+  font-size: 16px;
+  line-height: 20px;
+  color: #e60073;
   margin: 0px auto 4px;
 `;
 
