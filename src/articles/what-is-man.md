@@ -3,6 +3,7 @@ title: "What is man? Mark Twain"
 tag: book review
 display: 7
 path: "/articles/what-is-man"
+featuredImage: ../images/potatoes.jpg
 ---
 "But Stock..." Drayson will spontaneously ask me, usually when I am in the middle of something demanding, to which I will divert my concentration to look at him as he continues "... what is man?" Cue me losing my sh*t for about a second until I remember that I love him and his ability to take the seriousness out of situations, and I will laugh and playfully attack him.
 
