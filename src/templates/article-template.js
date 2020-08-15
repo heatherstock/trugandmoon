@@ -15,11 +15,16 @@ const Wrapper = styled.div`
   margin: auto;
 `;
 
+const Text = styled.div`
+  font-size: 19px;
+  line-height: 30px;
+`;
+
   return (
     <Layout>
       <Wrapper>
         <Heading>{data.markdownRemark.frontmatter.title}</Heading>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        <Text dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Wrapper>
     </Layout>
   )

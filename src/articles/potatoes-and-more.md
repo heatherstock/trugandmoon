@@ -3,8 +3,9 @@ title: "Home grown potatoes and other adventures"
 tag: gardening
 display: 1
 path: "/articles/potatoes-and-more"
-featuredImage: ../images/borage.jpg
+featuredImage: ../images/potatoes.jpg
 ---
+
 Slugs, aphids, ants, caterpillars, woodlice and what we can only assume was a giant fox poo - we've seen a lot in our attempts to grow some food for ourselves over the lockdown period. Our runner beans barely saw the light of day before being decimated by an unknown pest, leaving no evidence we even planted any, after spending weeks tending to the seedlings on the windowsill. The broadbeans have just been covered in aphids, which are tended to by a colony of ants that take them "home" at night to protect them and bring them back again the next morning so they have a never ending supply of "honeydew", aka aphid waste products. A beautifully disgusting example of symbiosis. We have managed to avoid too many slugs and caterpillers on our cabbages and kales, and the woodlice tend to hide in the lettuce rather than eat it, so hopefully *touch wood* that remains the case. I won't go into too many details about the fox poo other than it was ginormous but I can't think what other animals are roaming around a night time going to the toilet in asparagus beds. 
 
 Anyway! Some plants that did very well were the potatoes. We found that putting two rows of four plants in our 10' by 4' beds was a little tight, especially when it came to "earthing up" the soil around the plants to increase the yield and prevent any of the tubers from turning green. In fact about a quarter of the potatoes were a smidge on the green side and we didn't want to risk it so we fed them to the worms. Next time we will plant them slightly lower, so there is more vertical space before the soil starts falling over the edges of the bed, and hopefully by then we will have a few more beds and we can experiment with a whole bed of potatoes that are spaced more efficiently. 

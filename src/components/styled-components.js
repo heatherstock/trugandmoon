@@ -37,6 +37,7 @@ export const Section1 = styled.div`
 export const Subtitle = styled.h1`
   grid-column: 1 / -1;
   font-size: 20px;
+  line-height: 24px;
   color: palevioletred;
   font-style: italic;
   padding: 8px 0;
@@ -48,16 +49,16 @@ export const Subtitle2 = styled.h1`
   @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
-  }
-  @media (min-width: 1280px) {
-    border-bottom: 1px solid #cec6b9;
+    margin-bottom: 0px;
   }
   grid-column: 1 / -1;
   font-size: 20px;
+  line-height: 24px;
   color: palevioletred;
   font-style: italic;
   padding: 8px 0;
   border-top: 1px solid #cec6b9;
+  border-bottom: 1px solid #cec6b9;
   
 `;
 
@@ -91,6 +92,7 @@ export const Type1Image = styled(Img)`
   }
   grid-column: span 8;
   height: 375px;
+  margin-bottom: 8px;
 `;
 
 export const Type2Container = styled.div`
@@ -191,6 +193,7 @@ export const Type4Image = styled(Img)`
 }
   grid-column: span 8;
   height: 375px;
+  margin-bottom: 8px;
 `;
 
 export const Type5Container = styled.div`
@@ -277,7 +280,8 @@ export const Type3aText = styled.div`
   @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
-    border-top: 1px solid #cec6b9;
+    padding: 5px 5px 0;
+    border-bottom: 1px solid #cec6b9;
   }
   @media (min-width: 1280px) {
     grid-column: span 3;
@@ -302,7 +306,9 @@ export const Type3bText = styled.div`
   @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
-    border-top: 1px solid #cec6b9;
+    padding: 5px 5px 0;
+    border-bottom: 1px solid #cec6b9;
+    margin-bottom: -1px;
 
   }
   @media (min-width: 1280px) {
