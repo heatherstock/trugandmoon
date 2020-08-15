@@ -6,9 +6,14 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
   const Heading = styled.h1`
+  @media (max-width: 399px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
   padding: 16px 0;;
-  font-size: 24px;
-  color: darkOliveGreen;
+  font-size: 42px;
+  line-height: 48px;
+
 `;
 
 const Wrapper = styled.div`
@@ -17,6 +22,10 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.div`
+@media (max-width: 399px) {
+  font-size: 17px;
+  line-height: 24px;
+}
   font-size: 19px;
   line-height: 30px;
 `;

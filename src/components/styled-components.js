@@ -328,34 +328,44 @@ export const Edition = styled.h1`
 @media (min-width: 600px) {
   font-size: 42px;
 }
-  color: darkOliveGreen;
+  font-weight: 800;
 `;
 
 export const Article = styled.h2`
+@media (max-width: 399px) {
   font-size: 30px;
-  line-height: 33px;
+  line-height: 36px;
+}
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 800;
   margin: 1px auto;
-  color: darkOliveGreen;
 `;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: darkOliveGreen;
   &:hover {
     text-decoration: underline;
+    text-decoration-color: #154726;
   }
 `;
 
 export const Tag = styled.p`
   font-family: Work Sans, sans serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: indianred;
+  font-size: 19px;
+  line-height: 24px;
+  color: #eb338f;
   margin: 0px auto 4px;
 `;
 
 export const Excerpt = styled.p`
+  @media (max-width: 399px) {
+    font-size: 17px;
+    line-height: 24px;
+  }
   font-family: Baskervville, serif;
   margin: 10px auto 15px;
+  font-size: 19px;
+  line-height: 27px;
 `;

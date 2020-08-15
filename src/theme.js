@@ -6,15 +6,15 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: auto;
     font-family: Baskervville, serif;
-    font-size: 19px;
-    line-height: 27px;
     position: relative;
     min-height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
+    color: #0f1433;
 
   }
   h1, h2, h3 {
     font-family: Work Sans, sans serif;
+    color: #154726;
   }
 `;
