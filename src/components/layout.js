@@ -12,17 +12,16 @@ const Wrapper = styled.div`
 @media (min-width: 600px) {
   margin: 0 36px;
 }
-  padding-bottom: 56px;
 `;
 
 const Footer = styled.footer`
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   bottom: 0;
   width: 100%;
   height: 56px;
+  border-top: 1px solid #cec6b9;
 `;
 
 const Layout = ({ children }) => {
@@ -46,8 +45,8 @@ const Layout = ({ children }) => {
       <Wrapper>
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
         <div>{children}</div>
-      </Wrapper>
       <Footer>© Trug & Moon, {new Date().getFullYear()}</Footer>
+      </Wrapper>
     </>
   )
 }
