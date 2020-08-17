@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #154726;
+  border-bottom: 5px solid #154726;
 `;
 
 const TitleLink = styled(Link)`
