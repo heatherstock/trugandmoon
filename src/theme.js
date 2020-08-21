@@ -14,8 +14,12 @@ export const GlobalStyle = createGlobalStyle`
 
   }
   h1, h2, h3 {
-    font-family: Work Sans, sans serif;
+    font-family: Work Sans, 'sans serif';
     color: #154726;
     font-weight: 800;
+  }
+  blockquote {
+    border-left: 5px solid #154726;
+    padding-left: 20px;
   }
 `;
