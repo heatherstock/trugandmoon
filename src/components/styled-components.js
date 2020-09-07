@@ -369,7 +369,6 @@ export const Excerpt = styled.p`
     font-size: 17px;
     line-height: 24px;
   }
-  font-family: Baskervville, serif;
   margin: 10px auto 15px;
   font-size: 19px;
   line-height: 27px;
