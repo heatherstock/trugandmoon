@@ -1,43 +1,20 @@
 ---
-title: "What is man? Mark Twain"
+title: "What is Man? Mark Twain"
 tag: book review
 display: 7
 path: "/articles/what-is-man"
 featuredImage: ../images/potatoes.jpg
 ---
-In progress... "But Stock..." Drayson will spontaneously ask me, usually when I am in the middle of something demanding, to which I will divert my concentration to look at him as he continues "... what is man?" Cue me losing my sh*t for about a second until I remember that I love him and his ability to take the seriousness out of situations, and I will laugh and playfully attack him.
+Do we have free will? Is anything we do to be praised or admonished? Or is everything we do simply a result of our nature and our nuture? "What is Man?" seeks to answer these questions. Interestingly enough Mark Twain didn't publish it until many years after it was written, and even then in a tiny print run, anonymously. He was so afraid of the ideas within ruining his reputation and leaving him penniless. If that doesn't inspire you to read it, I don't know what will! 
 
-We found the book in a charity shop, which are my favourite type of bookshops as the offerings are not determined by what's fashionable, and so you find such a bizarre collection of books you would never normally be exposed to. Well I should say Drayson found the book, which he only bought because it was letterpress printed and set in Baskerville, his favourite typeface (at the moment). And it was smelly, which seems to be his first  determinant when choosing books. 
+We see from the introduction the principles, or dogmas, are:
+> 1. Man is a machine; he originates nothing, not even a thought. He is moved, directed, comanded, by external influences alone. 
+> 2. All conduct arises from a single motive — self-satisfaction; the attainment of self-approval, Man must act to as to content the spirit within; he cannot do otherwise. 
+> 3. The permanent unalterable thing in a human being is the temperament. Born with a man, the temperament remains with him to the end; he cannot change it. 
+> 4. Complete determinism. Man is made by his heredity; the future, being fixed, is as irrevocable as the past. 
 
-Anyway, I finally got around to reading it and I was pleasantly surpised to find it was based around the concept of free will, something I've been exploring recently. 
+*"Am I honest?" he asked [in a letter to his most intimate friend, the Rev. Joseph Twichell]. "I give you my word of honour (privately) I am not. For seven years I have suppressed a book which my conscience tells me I ought to publish. I hold it a duty to publish it. There are other difficult duties I am equal to, but I am not equal to that one."*
 
-I'll give a brief synopsis of each chapter, with notable quotes, followed by my own thoughts in _italics._ 
+Am I honest? I give you my word of honour (publicly) I am not. For several years I have suppressed a blog which my conscience tells me I ought to publish. I hold it a duty to publish it. There are other difficult duties I am equal to, but I am not equal to that one. Well, until now. I finally come to a place in my life where I am motivated enough by external influences to content the spirit within and start writing a blog — or at least that is Mark Twain's theory. Maybe this was determined all along, that this moment right now I would be writing these very words and in a few minutes I will be publishing. Who knows? 
 
-### Introduction
-The introduction is almost as long as the actual book and it offers a great deal of insight into the mind of Mark Twain, and why he waited so long to publish 'What is Man?'. Interestingly, once he did publish it - anonymously, lest it, and therefore him, be met with disdain - the general response was that the points within were all familiar. So why the fear of publication? My guess is that it comes from that part inside of us that is constantly portraying a mask, simultaneously craving someone can see beyond the mask and praying no one ever does. 
-
-> "Am I honest?" he asked. "I'll give you my word of honour (privately) I am not. For seven years I have suppressed a book which my conscience tells me I ought to publish. I hold it a duty to publish it. There are other difficult duties I am equal to, but I am not equal to that one." 
-> *Mark Twain to Rev. Joseph Twichell, his most intimate friend, on a matter that brought him great unease.*
-
-*One of the five yamas, or "renunciations", in the practice of yoga is Satya, or "truthfulness", to refrain from telling lies. The yamas, along with the other 7 limbs of yoga, are instructions on how to overcome fear, which is the basis of suffering. As we can see, fear prevents us from telling our truth, from showing the world who we really are - fear of rejection, of losing our income, our status in society, our partners etc.* 
-
-### Chapter 1 - Man the Machine; Personal Merit
-Man is simply a machine, and like a machine, its performance is not personal. It has in-born heredities or prejudices which it has neither the power or the desire to remove. Only external circumstances can remove such prejudices, like iron can be extracted from it's ore and even refined into steel. However, no such external circumstance can ever turn the iron to gold. So man can be educated to his limit, but no further. Man can do nothing, think nothing, without the outside influence to drive him, so therefore nothing he does or thinks can be attributed to personal merit. Even the "brave" man is driven to do a brave thing by the fear of something else like shame for not doing the brave thing. 
-
-> Young Man: Well, certainly that is a strange enough doctrine. What is the sole impulse that ever moves a person to do a thing?
-
-> Old Man: The impulse to content his own spirit - the necessity of contenting his own spirit and winning its approval.
-
-> YM: Oh, come, that won't do!
-
-> OM: Why won't it?
-
-> YM: Because it puts him in the attitude of always looking out for his own comfort and advantage; whereas an unselfish man often does a hing solely for another person's good when it is a positive disadvantage for himself. 
-
-> OM: It is a mistake. The act must do him good, FIRST; otherwise he will not do it. He may think he is doing it solely for the other person's sake, but it is not so; he is contenting his own spirit first - the other person's benefit has to always take second place.
-
-**
-
-### Chatper 2 - Man's Sole Impulse - The Securing Of His Own Approval
-
-
+I'm working on Satya at the moment — truthfulness. Not many people are truthful. As long as we have fear, we cannot be truthful. Fear of people seeing behind the perfect mask we feel compelled to wear all of the time. Fear of that leading to us losing something, our job, our friends, our spouses. I'm not simply talking about "not lying to people" like we tell young children, I'm talking about that deeper level of truth, of deciding what we stand for and speaking up about it. Even though I am not truthful, I am more aware of being not truthful, and maybe one day I will even be truthful, like Mark Twain. 
