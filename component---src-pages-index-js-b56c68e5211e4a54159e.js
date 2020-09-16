@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{RXBc:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),o=n.n(a),l=n("Wbzz"),r=n("Bl7J"),c=n("vrFN");t.default=function(){return o.a.createElement(r.a,null,o.a.createElement(c.a,{title:"Home"}),o.a.createElement("p",null,"Work in progress, while you're here, check out our ",o.a.createElement(l.Link,{to:"/blog"},"blog")),o.a.createElement("p",null,'"Know thyself and thou shalt know the Universe and God." - Pythagoras'))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-b56c68e5211e4a54159e.js.map
