@@ -3,7 +3,6 @@ title: "Blackberry jam recipe"
 tag: recipe
 display: 6
 path: "/articles/blackberry-jam"
-featuredImage: ../images/potatoes.jpg
 ---
 Seriously, you can make this gorgeous jam in a lunchtime. It does involve some heavy guesswork and a lot of "eh, I think it's done", but have a go! Once you learn a few basics its much easier to take an educated guess than mess around with a jam thermometer - in fact jam thermometers are much less accurate than just testing the jam to see if it's at the set point. 
 

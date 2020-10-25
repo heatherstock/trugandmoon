@@ -34,7 +34,6 @@ const Text = styled.div`
     <Layout>
       <Wrapper>
         <Heading>{data.markdownRemark.frontmatter.title}</Heading>
-        <Img fluid={data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid} />
         <Text dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Wrapper>
     </Layout>
@@ -47,13 +46,6 @@ export const query = graphql`
       html
       frontmatter {
         title
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
