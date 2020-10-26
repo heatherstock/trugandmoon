@@ -19,6 +19,7 @@ export default ({ data }) => {
 const Wrapper = styled.div`
   max-width: 80ch;
   margin: auto;
+  padding-bottom: 30px;
 `;
 
 const Text = styled.div`
