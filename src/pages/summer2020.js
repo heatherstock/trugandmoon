@@ -2,18 +2,18 @@ import React from "react"
 import EditionLayout from "../components/editionLayout"
 
 const theme = {
-  main: "#154726",
-  accent: "palevioletred",
-  tag: "#e60073"
+  main: "#191970",
+  accent: "#B8860B",
+  tag: "#916A08"
 }
 
-const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => (
+const Summer2020Edition = ({ data: { allMarkdownRemark: { edges } } }) => (
   <EditionLayout edges={edges} theme={theme}/>
 )
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}, filter: {frontmatter: {edition: {eq: "summer2020"}}}) {
+    allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}, filter: {frontmatter: {edition: {eq: "winter2020-21"}}}) {
       totalCount
       edges {
         node {
@@ -40,4 +40,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default Summer2020Edition

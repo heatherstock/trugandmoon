@@ -35,7 +35,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/articles`,
+        path: `${__dirname}/src/articles/summer2020`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/articles/winter2020-21`,
       },
     },
     `gatsby-transformer-sharp`,

@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
@@ -31,8 +30,14 @@ const Text = styled.div`
   line-height: 30px;
 `;
 
+const theme = {
+  main: "#154726",
+  accent: "palevioletred",
+  tag: "#e60073"
+}
+
   return (
-    <Layout>
+    <Layout theme={theme}>
       <Wrapper>
         <Heading>{data.markdownRemark.frontmatter.title}</Heading>
         <Text dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />

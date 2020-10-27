@@ -2,8 +2,8 @@
 title: "Yoga for tight hamstrings"
 tag: yoga
 display: 4
-path: "/articles/yoga-hamstrings"
-featuredImage: ../images/low-lunge.jpg
+featuredImage: ../../images/low-lunge.jpg
+edition: summer2020
 ---
 Do you have tight hamstrings? Do you _really_ have tight hamstrings? Or do you just _think_ you have tight hamstrings? Chances are you might not have tight hamstrings at all, but that does seem to be the common misconception because they _FEEL_ tight! What you most probably have, especially if you sit down a lot or even if you move a lot but in one dimension, like running or cycling, is _overly stretched_ hamstrings. So every time you do yoga to "lengthen your hamstrings", you probably aren't doing much of anything (and could be exacerbating the problem!) 
 
@@ -11,7 +11,7 @@ So what's the cause of overly stretched hamstrings? It tends to be an anteriorly
 
 Well what causes an anteriorly tilted pelvis then? WEAK GLUTES! Which actually causes a whole host of other problems which we explore in later posts, such as "tight" hip flexors, weak abdominals, weak pelvic floor - it's all tied together and they all impact one another. Which is good news! We can work on our glutes and simultaneously work on all the connecting structures. 
 
-![Low Lunge](../images/low-lunge.jpg)
+![Low Lunge](../../images/low-lunge.jpg)
 
 The pose in the photo is a LYT method low lunge. Distinctly different from a typical yoga low lunge, this is based on how we develop the ability to stand upright as an infant, something we need to retrain our brain to do in order to override bad habits we've built over a lifetime. You may be thinking, "well I can obviously stand up, so why do I need to retrain my brain?" The answer is that our bodies are very adaptive, so when our glutes become weak, our other, less equipped muscles will pick up the slack, but it's not a great solution. 
 

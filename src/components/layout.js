@@ -21,10 +21,11 @@ const Footer = styled.footer`
   bottom: 0;
   width: 100%;
   height: 56px;
-  border-top: 1px solid #154726;
+  color: ${props => props.theme.main};
+  border-top: 1px solid ${props => props.theme.main};
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, theme }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -43,9 +44,9 @@ const Layout = ({ children }) => {
     <>
     <GlobalStyle />
       <Wrapper>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} theme={theme}/>
         <div>{children}</div>
-      <Footer>© Trug & Moon, {new Date().getFullYear()}</Footer>
+      <Footer theme={theme}>© Trug & Moon, {new Date().getFullYear()}</Footer>
       </Wrapper>
     </>
   )

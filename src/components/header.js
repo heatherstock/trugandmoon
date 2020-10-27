@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 5px solid #154726;
+  border-bottom: 5px solid ${props => props.theme.main};
 `;
 
 const TitleLink = styled(Link)`
@@ -23,12 +23,12 @@ const TitleLink = styled(Link)`
   font-weight: 800;
   margin: 16px 0;
   flex: 1;
-  color: palevioletred;
+  color: ${props => props.theme.accent};
   text-decoration: none;
 `;
 
 const NavLink = styled(Link)`
-  color: black;
+  color: ${props => props.theme.main};
   text-decoration: none;
 `;
 
@@ -48,15 +48,15 @@ const ListItem = styled.li`
   margin-top: 36px;
 `;
 
-const Header = ({ siteTitle, menuLinks }) => (
+const Header = ({ siteTitle, menuLinks, theme }) => (
   <header>
-      <Wrapper>
-        <TitleLink to="/">{siteTitle}</TitleLink>
+      <Wrapper theme={theme}>
+        <TitleLink to="/" theme={theme}>{siteTitle}</TitleLink>
         <div>
         <List>
           {menuLinks.map(link => (
             <ListItem key={link.name}>
-              <NavLink to={link.link}>{link.name}</NavLink>
+              <NavLink to={link.link} theme={theme}>{link.name}</NavLink>
             </ListItem>
           ))}
         </List>

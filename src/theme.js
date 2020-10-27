@@ -15,7 +15,6 @@ export const GlobalStyle = createGlobalStyle`
   }
   h1, h2, h3 {
     font-family: Work Sans, 'sans serif';
-    color: #154726;
     font-weight: 800;
   }
   blockquote {

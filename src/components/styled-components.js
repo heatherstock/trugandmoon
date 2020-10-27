@@ -38,11 +38,11 @@ export const Subtitle = styled.h1`
   grid-column: 1 / -1;
   font-size: 30px;
   line-height: 36px;
-  color: palevioletred;
+  color: ${props => props.theme.accent};
   font-style: italic;
   padding: 8px 0;
-  border-top: 5px solid #154726;
-  border-bottom: 1px solid #154726;
+  border-top: 5px solid ${props => props.theme.main};
+  border-bottom: 1px solid ${props => props.theme.main};
 `;
 
 export const Subtitle2 = styled.h1`
@@ -54,11 +54,11 @@ export const Subtitle2 = styled.h1`
   grid-column: 1 / -1;
   font-size: 30px;
   line-height: 36px;
-  color: palevioletred;
+  color: ${props => props.theme.accent};
   font-style: italic;
   padding: 8px 0;
-  border-top: 5px solid #154726;
-  border-bottom: 1px solid #154726;
+  border-top: 5px solid ${props => props.theme.main};
+  border-bottom: 1px solid ${props => props.theme.main};
   
 `;
 
@@ -82,8 +82,8 @@ export const Type1Text = styled.div`
 @media (max-width: 959px) {
   grid-area: 2/1/auto/-1;
 }
-    grid-column: span 4;
-    grid-row-start: 1;
+  grid-column: span 4;
+  grid-row-start: 1;
 `;
 
 export const Type1Image = styled(Img)`
@@ -107,14 +107,14 @@ export const Type2Container = styled.div`
     grid-column: span 12;
     padding-top: 15px;
     margin-top: -10px;
-    border-top: 5px solid #154726;
+    border-top: 5px solid ${props => props.theme.main};
   }
   column-gap: 30px;
   row-gap: 0;
   grid-column: span 3;
   padding-left: 15px;
   margin-left: -15px;
-  border-left: 1px solid #154726;
+  border-left: 1px solid ${props => props.theme.main};
 `;
 
 export const Type2Text = styled.div`
@@ -210,14 +210,14 @@ export const Type5Container = styled.div`
     grid-column: span 12;
     padding-top: 15px;
     margin-top: -10px;
-    border-top: 5px solid #154726;
+    border-top: 5px solid ${props => props.theme.main};
   }
   grid-column: span 3;
   column-gap: 30px;
   row-gap: 0;
   padding-left: 15px;
   margin-left: -15px;
-  border-left: 1px solid #154726;
+  border-left: 1px solid ${props => props.theme.main};
   margin-bottom: 15px;
 `;
 
@@ -276,22 +276,22 @@ export const Section3 = styled.div`
 export const Type3aText = styled.div`
   @media (max-width: 599px) {
     grid-column: span 12;
-    border-bottom: 1px solid #154726;
+    border-bottom: 1px solid ${props => props.theme.main};
   }
   @media (min-width: 600px) and (max-width: 959px) {
-    border-top: 5px solid #154726;
+    border-top: 5px solid ${props => props.theme.main};
   }
   @media (min-width: 960px) and (max-width: 1279px) {
     grid-column: span 4;
     grid-template-columns: 1fr;
     padding: 5px 5px 0;
-    border-bottom: 1px solid #154726;
+    border-bottom: 1px solid ${props => props.theme.main};
   }
   @media (min-width: 1280px) {
     grid-column: span 3;
     padding-left: 15px;
     margin-left: -10px;
-    border-left: 1px solid #154726;
+    border-left: 1px solid ${props => props.theme.main};
   }
   grid-area: auto/1/auto/-1;
   grid-column: span 6;
@@ -300,7 +300,7 @@ export const Type3aText = styled.div`
 export const Type3bText = styled.div`
   @media (max-width: 599px) {
     grid-column: span 12;
-    border-top: 5px solid #154726;
+    border-top: 5px solid ${props => props.theme.main};
 
   }
   @media (min-width: 600px) and (max-width: 959px) {
@@ -311,7 +311,7 @@ export const Type3bText = styled.div`
     grid-column: span 4;
     grid-template-columns: 1fr;
     padding: 5px 5px 0;
-    border-bottom: 1px solid #154726;
+    border-bottom: 1px solid ${props => props.theme.main};
     margin-bottom: -1px;
 
   }
@@ -319,7 +319,7 @@ export const Type3bText = styled.div`
     grid-column: span 3;
     padding-left: 15px;
     margin-left: -10px;
-    border-left: 1px solid #154726;
+    border-left: 1px solid ${props => props.theme.main};
   }
   grid-area: auto/1/auto/-1;
   grid-column: span 6;
@@ -335,6 +335,7 @@ export const Edition = styled.h1`
   line-height: 60px;
 }
 margin: 16px auto;
+color: ${props => props.theme.main};
 `;
 
 export const Article = styled.h2`
@@ -349,9 +350,10 @@ export const Article = styled.h2`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
+  color: ${props => props.theme.main};
   &:hover {
     text-decoration: underline;
-    text-decoration-color: #154726;
+    text-decoration-color: ${props => props.theme.accent};
   }
 `;
 
@@ -360,7 +362,7 @@ export const Tag = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #e60073;
+  color: ${props => props.theme.tag};
   margin: 0px auto 4px;
 `;
 
@@ -372,4 +374,5 @@ export const Excerpt = styled.p`
   margin: 10px auto 15px;
   font-size: 19px;
   line-height: 27px;
+  color: ${props => props.theme.main};
 `;
