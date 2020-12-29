@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"0Apk":function(e,n,a){"use strict";a.r(n),a.d(n,"query",(function(){return d}));var t=a("q1tI"),r=a.n(t),c=a("p2xe"),u={main:"#191970",accent:"#B8860B",tag:"#916A08"},d="1668402045";n.default=function(e){var n=e.data.allMarkdownRemark.edges;return r.a.createElement(c.a,{edges:n,theme:u})}}}]);
+//# sourceMappingURL=component---src-pages-summer-2020-js-efde4232f628d5eb8f25.js.map
