@@ -18,7 +18,7 @@ export default ({ data }) => {
 const Wrapper = styled.div`
   max-width: 80ch;
   margin: auto;
-  padding-bottom: 30px;
+  padding-bottom: 64px;
 `;
 
 const Text = styled.div`
@@ -26,8 +26,8 @@ const Text = styled.div`
   font-size: 17px;
   line-height: 24px;
 }
-  font-size: 19px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 32px;
 `;
 
 const theme = {

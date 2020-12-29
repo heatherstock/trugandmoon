@@ -46,7 +46,7 @@ A bowl or dish (it needs to be large enough to hold the amount of sugar you are 
 
 10. Take the jars out of the oven and carefully ladle the jam in, up to the neck of the jar. The jars need to be hot, or the heat of the jam will cause them to break.
 
-11. Wipe the mouths of the jars, put the lids on and viola, jam in an hour! 
+11. Wipe the mouths of the jars, put the lids on and viola, jam in an hour! &#8718;
 
 *NB // A lot of recipes mention only using brand new lids or using special plastic film under the lids, but personally I've used old jam jars and lids and they've worked fine. I've not needed to do any further processing of the jars to vacuum seal them, as they cool the pressure inside the jar will decrease forming a vacuum seal on its own. You can use a larger piece of plastic film and secure with an elastic band if you have to.*
 

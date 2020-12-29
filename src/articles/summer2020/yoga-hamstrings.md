@@ -19,4 +19,4 @@ Instead of sinking into the hips and tipping the pelvis (as in the typical yoga 
 
 There's even more going on in the right hand side - the right foot in the photo is energetically being dragged backwards, engaging and strengthening the hamstring. The neutral pelvis and both bent legs allow our hamstrings to have a rest from being overly stretched and start to strenthen again for more optimal use. Once they are strong, and not being over-stretched and over-used by a tipped pelvis, they'll be supple too.
 
-So give this low lunge a try - really drag that front foot back and engage the glute on the back leg to push the hip forward and get a neutral pelvis. You'll be strenthening your glutes and hamstrings, and not only that, but retraining your brain for optimal movement. 
+So give this low lunge a try - really drag that front foot back and engage the glute on the back leg to push the hip forward and get a neutral pelvis. You'll be strenthening your glutes and hamstrings, and not only that, but retraining your brain for optimal movement. &#8718;
