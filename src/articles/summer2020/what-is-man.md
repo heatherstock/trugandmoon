@@ -1,6 +1,6 @@
 ---
 title: "What is Man? Mark Twain"
-tag: book review
+tags: book-review
 display: 7
 edition: summer2020
 ---

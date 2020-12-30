@@ -1,6 +1,6 @@
 ---
 title: "The bee in the bookshelf"
-tag: spiritual
+tags: spiritual
 display: 8
 edition: winter2020-21
 ---

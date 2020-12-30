@@ -1,6 +1,6 @@
 ---
 title: "Blackberry jam recipe"
-tag: recipe
+tags: recipe
 display: 6
 edition: summer2020
 ---

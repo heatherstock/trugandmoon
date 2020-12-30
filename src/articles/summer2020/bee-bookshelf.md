@@ -1,7 +1,8 @@
 ---
 title: "The bee in the bookshelf"
-tag: spiritual
+tags: spiritual
 display: 8
+date: 2020-08-01
 edition: summer2020
 ---
 This is a strange little story that led me to have a strong realisation - an epiphany, if you will - about how we live our lives. 

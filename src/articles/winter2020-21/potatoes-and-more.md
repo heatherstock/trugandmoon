@@ -1,6 +1,6 @@
 ---
 title: "Home grown potatoes and other adventures"
-tag: gardening
+tags: gardening
 display: 1
 featuredImage: ../../images/potatoes.jpg
 edition: winter2020-21

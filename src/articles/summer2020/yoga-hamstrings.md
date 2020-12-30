@@ -1,6 +1,6 @@
 ---
 title: "Yoga for tight hamstrings"
-tag: yoga
+tags: yoga
 display: 4
 featuredImage: ../../images/low-lunge.jpg
 edition: summer2020

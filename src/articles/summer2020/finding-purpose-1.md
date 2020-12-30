@@ -1,6 +1,6 @@
 ---
 title: "Finding your purpose - part 1"
-tag: inspiration
+tags: inspiration
 display: 2
 featuredImage: ../../images/find-purpose-1.jpg
 edition: summer2020

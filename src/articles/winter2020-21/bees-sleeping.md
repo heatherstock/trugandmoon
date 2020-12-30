@@ -1,6 +1,6 @@
 ---
 title: "Bees sleeping!"
-tag: gardening
+tags: gardening
 display: 3
 featuredImage: ../../images/bees-sleeping.jpg
 edition: winter2020-21

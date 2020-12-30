@@ -1,6 +1,6 @@
 ---
 title: "A technique for falling asleep..."
-tag: meditation
+tags: meditation
 display: 5
 edition: winter2020-21
 ---
