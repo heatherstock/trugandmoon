@@ -376,3 +376,7 @@ export const Excerpt = styled.p`
   line-height: 27px;
   color: ${props => props.theme.main};
 `;
+
+export const UL = styled.ul`
+list-style-type: none;
+`;

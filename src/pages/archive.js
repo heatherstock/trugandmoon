@@ -1,22 +1,30 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import * as _ from "../components/styled-components"
+
+const theme = {
+  main: "#154726",
+  accent: "palevioletred",
+  tag: "#e60073"
+}
 
 const ArchivePage = ({ data: { allMarkdownRemark: { group } } }) => (
-  <ul>
-      {group.map((tag) => (
-        <li key={tag.fieldValue}>
-          <Link to={`/archive/${tag.fieldValue.toLowerCase()}/`}>
-            <b>{tag.fieldValue}</b>
-            {' '}
-          </Link>
-        </li>
-      ))}
-    </ul>
+  <Layout>
+    <_.UL>
+        {group.map((tag) => (
+          <li key={tag.fieldValue}>
+            <_.StyledLink  to={`/archive/${tag.fieldValue.toLowerCase()}/`} theme={theme}>
+              <_.Article>{tag.fieldValue}</_.Article>
+            </_.StyledLink >
+          </li>
+        ))}
+      </_.UL>
+    </Layout>
 )
-
 export const query = graphql`
   query {
-    allMarkdownRemark(limit: 2000) {
+    allMarkdownRemark(filter: {frontmatter: {tags: {ne: "journal"}}}) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
