@@ -24,7 +24,7 @@ const ArchivePage = ({ data: { allMarkdownRemark: { group } } }) => (
 )
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {tags: {ne: "journal"}}}) {
+    allMarkdownRemark(filter: {frontmatter: {tags: {nin: ["journal", "tbc"]}}}) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
