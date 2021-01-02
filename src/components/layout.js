@@ -25,6 +25,12 @@ const Footer = styled.footer`
   border-top: 1px solid ${props => props.theme.main};
 `;
 
+const defaultTheme = {
+  main: "#154726",
+  accent: "palevioletred",
+  tag: "#e60073"
+}
+
 const Layout = ({ children, theme }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -44,9 +50,9 @@ const Layout = ({ children, theme }) => {
     <>
     <GlobalStyle />
       <Wrapper>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} theme={theme}/>
+      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} theme={theme ? theme : defaultTheme}/>
         <div>{children}</div>
-      <Footer theme={theme}>© Trug & Moon, {new Date().getFullYear()}</Footer>
+      <Footer theme={theme ? theme : defaultTheme}>© Trug & Moon, {new Date().getFullYear()}</Footer>
       </Wrapper>
     </>
   )

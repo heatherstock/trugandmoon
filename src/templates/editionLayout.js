@@ -17,7 +17,7 @@ const EditionLayout = ({ edges, theme }) => (
       <_.Subtitle theme={theme}>Highlights</_.Subtitle>
       <_.Type1Container>
         <_.Type1Text>
-          <_.Tag theme={theme}>{edges[1].node.frontmatter.tag.toUpperCase()}</_.Tag>
+          <_.Tag theme={theme}>{edges[1].node.frontmatter.tags.toUpperCase()}</_.Tag>
           <_.StyledLink to={edges[1].node.fields.slug} theme={theme}>
             <_.Article>{edges[1].node.frontmatter.title}</_.Article>
           </_.StyledLink>
@@ -28,7 +28,7 @@ const EditionLayout = ({ edges, theme }) => (
       <_.Type2Container theme={theme}>
         <_.Type2Image fluid={edges[3].node.frontmatter.featuredImage.childImageSharp.fluid} />
         <_.Type2Text>
-          <_.Tag theme={theme}>{edges[3].node.frontmatter.tag.toUpperCase()}</_.Tag>
+          <_.Tag theme={theme}>{edges[3].node.frontmatter.tags.toUpperCase()}</_.Tag>
           <_.StyledLink to={edges[3].node.fields.slug} theme={theme}>
           <_.Article>{edges[3].node.frontmatter.title}</_.Article>
           </_.StyledLink>
@@ -40,7 +40,7 @@ const EditionLayout = ({ edges, theme }) => (
       <_.Subtitle theme={theme}>Contemplations</_.Subtitle>
       <_.Type4Container>
         <_.Type4Text>
-          <_.Tag theme={theme}>{edges[2].node.frontmatter.tag.toUpperCase()}</_.Tag>
+          <_.Tag theme={theme}>{edges[2].node.frontmatter.tags.toUpperCase()}</_.Tag>
         <_.StyledLink to={edges[2].node.fields.slug} theme={theme}>
             <_.Article>{edges[2].node.frontmatter.title}</_.Article>
           </_.StyledLink>
@@ -51,7 +51,7 @@ const EditionLayout = ({ edges, theme }) => (
       <_.Type5Container theme={theme}>
         <_.Type5Image fluid={edges[4].node.frontmatter.featuredImage.childImageSharp.fluid} />
         <_.Type5Text>
-          <_.Tag theme={theme}>{edges[4].node.frontmatter.tag.toUpperCase()}</_.Tag>
+          <_.Tag theme={theme}>{edges[4].node.frontmatter.tags.toUpperCase()}</_.Tag>
           <_.StyledLink to={edges[4].node.fields.slug} theme={theme}>
             <_.Article>{edges[4].node.frontmatter.title}</_.Article>
           </_.StyledLink>
@@ -62,28 +62,28 @@ const EditionLayout = ({ edges, theme }) => (
     <_.Section3>
       <_.Subtitle2 theme={theme}>Miscellaneous</_.Subtitle2>
       <_.Type3aText theme={theme}>
-        <_.Tag theme={theme}>{edges[5].node.frontmatter.tag.toUpperCase()}</_.Tag>
+        <_.Tag theme={theme}>{edges[5].node.frontmatter.tags.toUpperCase()}</_.Tag>
         <_.StyledLink to={edges[5].node.fields.slug} theme={theme}>
           <_.Article>{edges[5].node.frontmatter.title}</_.Article>
         </_.StyledLink>
         <_.Excerpt theme={theme}>{edges[5].node.excerpt}</_.Excerpt>
       </_.Type3aText>
       <_.Type3aText theme={theme}>
-        <_.Tag theme={theme}>{edges[6].node.frontmatter.tag.toUpperCase()}</_.Tag>
+        <_.Tag theme={theme}>{edges[6].node.frontmatter.tags.toUpperCase()}</_.Tag>
         <_.StyledLink to={edges[6].node.fields.slug} theme={theme}>
           <_.Article>{edges[6].node.frontmatter.title}</_.Article>
         </_.StyledLink>
         <_.Excerpt theme={theme}>{edges[6].node.excerpt}</_.Excerpt>
       </_.Type3aText>
       <_.Type3bText theme={theme}>
-        <_.Tag theme={theme}>{edges[7].node.frontmatter.tag.toUpperCase()}</_.Tag>
+        <_.Tag theme={theme}>{edges[7].node.frontmatter.tags.toUpperCase()}</_.Tag>
         <_.StyledLink to={edges[7].node.fields.slug} theme={theme}>
           <_.Article>{edges[7].node.frontmatter.title}</_.Article>
         </_.StyledLink>
         <_.Excerpt theme={theme}>{edges[7].node.excerpt}</_.Excerpt>
       </_.Type3bText>
       <_.Type3bText theme={theme}>
-        <_.Tag theme={theme}>{edges[8].node.frontmatter.tag.toUpperCase()}</_.Tag>
+        <_.Tag theme={theme}>{edges[8].node.frontmatter.tags.toUpperCase()}</_.Tag>
         <_.StyledLink to={edges[8].node.fields.slug} theme={theme}>
           <_.Article>{edges[8].node.frontmatter.title}</_.Article>
         </_.StyledLink>

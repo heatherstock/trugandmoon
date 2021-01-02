@@ -1,5 +1,5 @@
 import React from "react"
-import EditionLayout from "../components/editionLayout"
+import EditionLayout from "../templates/editionLayout"
 
 const theme = {
   main: "#191970",

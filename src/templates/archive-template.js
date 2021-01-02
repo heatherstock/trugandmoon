@@ -1,9 +1,42 @@
 import React from "react"
+import styled from "styled-components"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import * as _ from "../components/styled-components"
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
+  const Wrapper = styled.div`
+  max-width: 80ch;
+  margin: auto;
+  padding-bottom: 64px;
+`;
+
+
+  const Div = styled.div`
+  padding-top: 36px;
+  `;
+
+const theme = {
+  main: "#154726",
+  accent: "palevioletred",
+  tag: "#e60073"
+}
+
   return (
-    <div>{edges[0].node.frontmatter.title}</div>
+    <Layout theme={theme}>
+      <Wrapper>{
+    edges.map(edge => {
+      return (
+        <Div>
+        <_.StyledLink to={edge.node.fields.slug} theme={theme}>
+          <_.Article>{edge.node.frontmatter.title}</_.Article>
+        </_.StyledLink>
+        <_.Excerpt theme={theme}>{edge.node.excerpt}</_.Excerpt>
+        </Div>
+      )
+    })}
+      </Wrapper>
+    </Layout>
   )
 }
 

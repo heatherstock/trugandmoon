@@ -12,7 +12,6 @@ export default ({ data }) => {
   padding: 16px 0;;
   font-size: 42px;
   line-height: 48px;
-
 `;
 
 const Wrapper = styled.div`
