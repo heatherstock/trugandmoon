@@ -46,7 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.tags.group.forEach(tag => {
     createPage({
-      path: `/tags/${tag.fieldValue.toLowerCase()}/`,
+      path: `/archive/${tag.fieldValue.toLowerCase()}/`,
       component: path.resolve(`./src/templates/archive-template.js`),
       context: {
         tag: tag.fieldValue,

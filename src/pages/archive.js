@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-const TagsPage = ({ data: { allMarkdownRemark: { group } } }) => (
+const ArchivePage = ({ data: { allMarkdownRemark: { group } } }) => (
   <ul>
       {group.map((tag) => (
         <li key={tag.fieldValue}>
-          <Link to={`/tags/${tag.fieldValue.toLowerCase()}/`}>
+          <Link to={`/archive/${tag.fieldValue.toLowerCase()}/`}>
             <b>{tag.fieldValue}</b>
             {' '}
           </Link>
@@ -25,4 +25,4 @@ export const query = graphql`
   }
 `
 
-export default TagsPage
+export default ArchivePage
