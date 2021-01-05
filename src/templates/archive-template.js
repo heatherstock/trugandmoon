@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import * as _ from "../components/styled-components"
+import { theme } from "../theme"
 
 export default ({ data: { allMarkdownRemark: { edges } } }) => {
   const Wrapper = styled.div`
@@ -16,14 +17,8 @@ export default ({ data: { allMarkdownRemark: { edges } } }) => {
   padding-top: 36px;
   `;
 
-const theme = {
-  main: "#154726",
-  accent: "palevioletred",
-  tag: "#e60073"
-}
-
   return (
-    <Layout theme={theme}>
+    <Layout>
       <Wrapper>{
     edges.map(edge => {
       return (

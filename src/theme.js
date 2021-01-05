@@ -22,3 +22,9 @@ export const GlobalStyle = createGlobalStyle`
     padding-left: 20px;
   }
 `;
+
+export const theme = {
+  main: "#154726",
+  accent: "palevioletred",
+  tag: "#e60073"
+}

@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import * as _ from "../components/styled-components"
+import { theme } from "../theme"
 
-const EditionLayout = ({ edges, theme }) => (
-<Layout theme={theme}>
+const EditionLayout = ({ edges }) => (
+<Layout>
   <_.Wrapper>
     <_.Welcome>
       <div>

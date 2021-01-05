@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby"
 import { GlobalStyle } from "../theme";
 import Header from "./header"
+import { theme } from "../theme"
 
 const Wrapper = styled.div`
 @media (max-width: 600px) {
@@ -25,13 +26,7 @@ const Footer = styled.footer`
   border-top: 1px solid ${props => props.theme.main};
 `;
 
-const defaultTheme = {
-  main: "#154726",
-  accent: "palevioletred",
-  tag: "#e60073"
-}
-
-const Layout = ({ children, theme }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -50,9 +45,9 @@ const Layout = ({ children, theme }) => {
     <>
     <GlobalStyle />
       <Wrapper>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} theme={theme ? theme : defaultTheme}/>
+      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} theme={theme}/>
         <div>{children}</div>
-      <Footer theme={theme ? theme : defaultTheme}>© Trug & Moon, {new Date().getFullYear()}</Footer>
+      <Footer theme={theme}>© Trug & Moon, {new Date().getFullYear()}</Footer>
       </Wrapper>
     </>
   )

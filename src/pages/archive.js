@@ -2,12 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import * as _ from "../components/styled-components"
-
-const theme = {
-  main: "#154726",
-  accent: "palevioletred",
-  tag: "#e60073"
-}
+import { theme } from "../theme"
 
 const ArchivePage = ({ data: { allMarkdownRemark: { group } } }) => (
   <Layout>

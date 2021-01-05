@@ -1,13 +1,8 @@
 import React from "react"
 import EditionLayout from "../templates/editionLayout"
 
-const theme = {
-  main: "#154726",
-  accent: "palevioletred",
-  tag: "#e60073"
-}
 const Summer2020Edition = ({ data: { allMarkdownRemark: { edges } } }) => (
-  <EditionLayout edges={edges} theme={theme}/>
+  <EditionLayout edges={edges}/>
 )
 
 export const query = graphql`
