@@ -11,6 +11,10 @@ module.exports = {
       {
         name:'Archive',
         link:'/archive'
+      },
+      {
+        name:'Journal',
+        link:'/journal'
       }
       ]
   },
