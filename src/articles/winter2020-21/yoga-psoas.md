@@ -1,9 +1,9 @@
 ---
 title: "Yoga for tight psoas / hip flexors"
-tags: yoga
+tags: Yoga
 display: 2
 featuredImage: ../../images/low-lunge.jpg
-edition: winter2020-21
+edition: Winter2020-21
 ---
 
 Coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon

@@ -1,9 +1,9 @@
 ---
 title: "Finding your purpose - part 1"
-tags: inspiration
+tags: Inspiration
 display: 2
 featuredImage: ../../images/find-purpose-1.jpg
-edition: summer2020
+edition: Summer2020
 ---
 
 ![Faversham Creek](../../images/find-purpose-1.jpg)

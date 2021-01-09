@@ -1,9 +1,9 @@
 ---
 title: "Bees sleeping!"
-tags: gardening
+tags: Gardening
 display: 3
 featuredImage: ../../images/bees-sleeping.jpg
-edition: summer2020
+edition: Summer2020
 ---
 ![Bees sleeping](../../images/bees-sleeping.jpg)
 

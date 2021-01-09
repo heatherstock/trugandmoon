@@ -7,7 +7,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => (
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}, filter: {frontmatter: {edition: {eq: "winter2020-21"}}}) {
+    allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}, filter: {frontmatter: {edition: {eq: "Winter2020-21"}}}) {
       totalCount
       edges {
         node {

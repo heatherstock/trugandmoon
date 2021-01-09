@@ -379,4 +379,38 @@ export const Excerpt = styled.p`
 
 export const UL = styled.ul`
 list-style-type: none;
+margin: 32px 0;
+`;
+
+export const ArchiveWrapper = styled.div`
+  display: grid;
+  column-gap: 31px;
+  row-gap: 0;
+  grid-template: auto/repeat(2,1fr);
+  grid-auto-flow: row;
+  overflow: hidden;
+}
+`;
+
+export const ArchiveTitle = styled.h1`
+@media (max-width: 599px) {
+  font-size: 36px;
+  line-height: 42px;
+}
+@media (min-width: 600px) {
+  font-size: 36px;
+  line-height: 42px;
+}
+margin: 32px auto;
+color: ${props => props.theme.main};
+`;
+
+export const ArchiveTag = styled.h2`
+@media (max-width: 399px) {
+  font-size: 30px;
+  line-height: 36px;
+}
+  font-size: 30px;
+  line-height: 36px;
+  margin: 1px auto;
 `;

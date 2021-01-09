@@ -1,8 +1,8 @@
 ---
 title: "Morning: How to make time. Allan Jenkins"
-tags: book-review
+tags: Book-Review
 display: 1
-edition: winter2020-21
+edition: Winter2020-21
 featuredImage: ../../images/morning.jpg
 ---
 "This is my manifesto for morning."

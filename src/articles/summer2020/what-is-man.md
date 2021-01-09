@@ -1,8 +1,8 @@
 ---
 title: "What is Man? Mark Twain"
-tags: book-review
+tags: Book-Review
 display: 7
-edition: summer2020
+edition: Summer2020
 ---
 Do we have free will? Is anything we do to be praised or admonished? Or is everything we do simply a result of our nature and our nuture? "What is Man?" seeks to answer these questions. Interestingly enough Mark Twain didn't publish it until many years after it was written, and even then in a tiny print run, anonymously. He was so afraid of the ideas within ruining his reputation and leaving him penniless. If that doesn't inspire you to read it, I don't know what will! 
 

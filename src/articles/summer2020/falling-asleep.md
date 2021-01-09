@@ -1,8 +1,8 @@
 ---
 title: "A technique for falling asleep..."
-tags: meditation
+tags: Meditation
 display: 5
-edition: summer2020
+edition: Summer2020
 ---
 
 Close your eyes and lie nice and still on your back (or another position if you like). Make sure you are comfortable and at a pleasant temperature.

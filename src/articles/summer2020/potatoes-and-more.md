@@ -1,9 +1,9 @@
 ---
 title: "Home grown potatoes and other adventures"
-tags: gardening
+tags: Gardening
 display: 1
 featuredImage: ../../images/potatoes.jpg
-edition: summer2020
+edition: Summer2020
 ---
 
 ![Potatoes](../../images/potatoes.jpg)

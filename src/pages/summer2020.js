@@ -7,7 +7,7 @@ const Summer2020Edition = ({ data: { allMarkdownRemark: { edges } } }) => (
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}, filter: {frontmatter: {edition: {eq: "summer2020"}}}) {
+    allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}, filter: {frontmatter: {edition: {eq: "Summer2020"}}}) {
       totalCount
       edges {
         node {

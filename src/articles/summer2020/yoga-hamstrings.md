@@ -1,9 +1,9 @@
 ---
 title: "Yoga for tight hamstrings"
-tags: yoga
+tags: Yoga
 display: 4
 featuredImage: ../../images/low-lunge.jpg
-edition: summer2020
+edition: Summer2020
 ---
 Do you have tight hamstrings? Do you _really_ have tight hamstrings? Or do you just _think_ you have tight hamstrings? Chances are you might not have tight hamstrings at all, but that does seem to be the common misconception because they _FEEL_ tight! What you most probably have, especially if you sit down a lot or even if you move a lot but in one dimension, like running or cycling, is _overly stretched_ hamstrings. So every time you do yoga to "lengthen your hamstrings", you probably aren't doing much of anything (and could be exacerbating the problem!) 
 
