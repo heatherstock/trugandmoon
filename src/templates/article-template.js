@@ -33,12 +33,6 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.div`
-@media (max-width: 399px) {
-  font-size: 17px;
-  line-height: 24px;
-}
-  font-size: 20px;
-  line-height: 32px;
 `;
 
   return (

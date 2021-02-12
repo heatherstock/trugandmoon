@@ -367,13 +367,7 @@ export const Tag = styled.p`
 `;
 
 export const Excerpt = styled.p`
-  @media (max-width: 399px) {
-    font-size: 17px;
-    line-height: 24px;
-  }
   margin: 10px auto 15px;
-  font-size: 19px;
-  line-height: 27px;
   color: ${props => props.theme.main};
 `;
 
