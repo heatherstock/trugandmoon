@@ -13,6 +13,9 @@ const Wrapper = styled.div`
 @media (min-width: 600px) {
   margin: 0 36px;
 }
+@media (max-width: 988px) {
+  margin: 18px 36px;
+}
 `;
 
 const Footer = styled.footer`

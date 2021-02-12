@@ -4,21 +4,17 @@ import PropTypes from 'prop-types'
 import React from "react"
 
 const Wrapper = styled.div`
+@media (min-width: 988px) {
   display: flex;
+}
   justify-content: space-between;
   align-items: center;
   border-bottom: 5px solid ${props => props.theme.main};
 `;
 
 const TitleLink = styled(Link)`
-@media (max-width: 600px) {
-  font-size: 42px;
-  line-height: 40px
-}
-@media (min-width: 600px) {
   font-size: 72px;
   line-height: 72px;
-}
   font-family: Work Sans, sans serif;
   font-weight: 800;
   margin: 16px 0;
@@ -28,24 +24,33 @@ const TitleLink = styled(Link)`
 `;
 
 const NavLink = styled(Link)`
+@media (max-width: 399px) {
+  padding-right: 24px;
+}
+@media (min-width: 400px) and (max-width: 987px) {
+  padding-right: 30px;
+}
+@media (min-width: 988px) {
+  padding-left: 30px;
+}
   color: ${props => props.theme.main};
   text-decoration: none;
 `;
 
 const List = styled.ul`
+@media (max-width: 987px) {
+  padding-left: 0;
+}
   display: flex;
   flex: 1;
 `;
 
 const ListItem = styled.li`
-@media (max-width: 600px) {
-  padding: 0 18px;
-}
-@media (min-width: 600px) {
-  padding: 0 40px;
+@media (min-width: 988px) {
+  display: flex;
+  margin-top: 36px;
 }
   list-style-type: none;
-  margin-top: 36px;
 `;
 
 const Header = ({ siteTitle, menuLinks, theme }) => (
