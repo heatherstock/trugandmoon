@@ -12,22 +12,17 @@ const JournalPage = ({ data: { allMarkdownRemark: { edges } } }) => {
   padding-bottom: 64px;
 `;
 
-
-  const Div = styled.div`
-  padding-top: 36px;
-  `;
-
   return (
     <Layout>
-      <Wrapper>{
+        <_.Edition>Journal</_.Edition>
+      <Wrapper>
+        {
     edges.map(edge => {
       return (
-        <Div>
-        <_.StyledLink to={edge.node.fields.slug} theme={theme}>
+        <div>
           <_.Article>{edge.node.frontmatter.title}</_.Article>
-        </_.StyledLink>
-        <_.Excerpt theme={theme}>{edge.node.excerpt}</_.Excerpt>
-        </Div>
+          <_.Excerpt theme={theme}>{edge.node.excerpt}</_.Excerpt>
+        </div>
       )
     })}
       </Wrapper>
@@ -37,7 +32,7 @@ const JournalPage = ({ data: { allMarkdownRemark: { edges } } }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, filter: {frontmatter: {tags: {eq: "journal"}}}) {
+    allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}, filter: {frontmatter: {tags: {eq: "journal"}}}) {
       totalCount
       edges {
         node {
@@ -46,11 +41,7 @@ export const query = graphql`
             title
             tags
           }
-          htmlAst 
-          fields {
-            slug
-          }
-          excerpt
+          excerpt(pruneLength: 10000)
         }
       }
     }
