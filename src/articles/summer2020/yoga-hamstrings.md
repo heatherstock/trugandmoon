@@ -9,11 +9,11 @@ Do you have tight hamstrings? Do you _really_ have tight hamstrings? Or do you j
 
 So what's the cause of overly stretched hamstrings? It tends to be an anteriorly tilted pelvis - a fancy sounding way of saying poor posture, which is aflicting more and more people in the 21st Century, even if you exercise a lot. The reason being that the hamstrings attach to the bottom of the pelvis, and if the pelvis is titled, the hamstrings will be pulled on, over time they become like an overly stretched elastic band, weak and unable to stretch further or contract when we need them to, like when we want to touch our toes or for efficient energy tranfer when running for example. 
 
-![Diagram showing how muscles are affected by neutral vs anteriorly tilted pelvis](../../images/hamstrings-quads-ql-abs.png "Hamstrings are on the back of the leg, figures are 'facing' the right. You can see how the titled pelvis of the figure on the right pulls on the hamstring, vs the neutral pelvis of the figure on the left.")
+![Diagram showing how muscles are affected by neutral vs anteriorly tilted pelvis](../../images/hamstrings-quads-ql-abs.png "Diagram showing how muscles are affected by neutral vs anteriorly tilted pelvis. Hamstrings are on the back of the leg, figures are 'facing' the right. You can see how the titled pelvis of the figure on the right pulls on the hamstring, vs the neutral pelvis of the figure on the left.")
 
 Well what causes an anteriorly tilted pelvis then? WEAK GLUTES! Which actually causes a whole host of other problems which we explore in later posts, such as "tight" hip flexors, weak abdominals, weak pelvic floor - it's all tied together and they all impact one another. Which is good news! We can work on our glutes and simultaneously work on all the connecting structures. 
 
-![Low Lunge](../../images/low-lunge.jpg)
+![LYT Low Lunge](../../images/low-lunge.jpg)
 
 The pose in the photo is a LYT method low lunge. Distinctly different from a typical yoga low lunge, this is based on how we develop the ability to stand upright as an infant, something we need to retrain our brain to do in order to override bad habits we've built over a lifetime. You may be thinking, "well I can obviously stand up, so why do I need to retrain my brain?" The answer is that our bodies are very adaptive, so when our glutes become weak, our other, less equipped muscles will pick up the slack, but it's not a great solution. 
 

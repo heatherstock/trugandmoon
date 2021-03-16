@@ -1,13 +1,13 @@
 import React from "react"
 import EditionLayout from "../templates/editionLayout"
 
-const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => (
+const Summer2020Edition = ({ data: { allMarkdownRemark: { edges } } }) => (
   <EditionLayout edges={edges}/>
 )
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}, filter: {frontmatter: {edition: {eq: "Winter2020-21"}}}) {
+    allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}, filter: {frontmatter: {edition: {eq: "Summer2020"}}}) {
       totalCount
       edges {
         node {
@@ -34,4 +34,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default Summer2020Edition

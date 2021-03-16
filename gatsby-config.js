@@ -12,10 +12,10 @@ module.exports = {
         name:'Archive',
         link:'/archive'
       },
-      {
-        name:'Journal',
-        link:'/journal'
-      }
+      // {
+      //   name:'Journal',
+      //   link:'/journal'
+      // }
       ]
   },
   plugins: [
